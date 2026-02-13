@@ -1,0 +1,1152 @@
+Структура папок тома Windows
+Серийный номер тома: 6A98-6AF2
+C:.
+|   all-crops.html
+|   index.html
+|   README.md
+|   structure.txt
+|   
++---assets
+|   +---css
+|   +---images
+|   |   \---crops
+|   |       +---alfalfa
+|   |       |       alfalfa_stage_1.png
+|   |       |       alfalfa_stage_10.png
+|   |       |       alfalfa_stage_2.png
+|   |       |       alfalfa_stage_3.png
+|   |       |       alfalfa_stage_4.png
+|   |       |       alfalfa_stage_5.png
+|   |       |       alfalfa_stage_6.png
+|   |       |       alfalfa_stage_7.png
+|   |       |       alfalfa_stage_8.png
+|   |       |       alfalfa_stage_9.png
+|   |       |       
+|   |       +---artichoke
+|   |       |       artichoke_stage_1.png
+|   |       |       artichoke_stage_10.png
+|   |       |       artichoke_stage_2.png
+|   |       |       artichoke_stage_3.png
+|   |       |       artichoke_stage_4.png
+|   |       |       artichoke_stage_5.png
+|   |       |       artichoke_stage_6.png
+|   |       |       artichoke_stage_7.png
+|   |       |       artichoke_stage_8.png
+|   |       |       artichoke_stage_9.png
+|   |       |       
+|   |       +---arugula
+|   |       |       arugula_stage_1.png
+|   |       |       arugula_stage_10.png
+|   |       |       arugula_stage_2.png
+|   |       |       arugula_stage_3.png
+|   |       |       arugula_stage_4.png
+|   |       |       arugula_stage_5.png
+|   |       |       arugula_stage_6.png
+|   |       |       arugula_stage_7.png
+|   |       |       arugula_stage_8.png
+|   |       |       arugula_stage_9.png
+|   |       |       
+|   |       +---asparagus
+|   |       |       asparagus_stage_1.png
+|   |       |       asparagus_stage_10.png
+|   |       |       asparagus_stage_2.png
+|   |       |       asparagus_stage_3.png
+|   |       |       asparagus_stage_4.png
+|   |       |       asparagus_stage_5.png
+|   |       |       asparagus_stage_6.png
+|   |       |       asparagus_stage_7.png
+|   |       |       asparagus_stage_8.png
+|   |       |       asparagus_stage_9.png
+|   |       |       
+|   |       +---banana-musaceae
+|   |       |       banana-musaceae_stage_1.png
+|   |       |       banana-musaceae_stage_10.png
+|   |       |       banana-musaceae_stage_2.png
+|   |       |       banana-musaceae_stage_3.png
+|   |       |       banana-musaceae_stage_4.png
+|   |       |       banana-musaceae_stage_5.png
+|   |       |       banana-musaceae_stage_6.png
+|   |       |       banana-musaceae_stage_7.png
+|   |       |       banana-musaceae_stage_8.png
+|   |       |       banana-musaceae_stage_9.png
+|   |       |       
+|   |       +---barley
+|   |       |       barley_stage_1.png
+|   |       |       barley_stage_10.png
+|   |       |       barley_stage_2.png
+|   |       |       barley_stage_3.png
+|   |       |       barley_stage_4.png
+|   |       |       barley_stage_5.png
+|   |       |       barley_stage_6.png
+|   |       |       barley_stage_7.png
+|   |       |       barley_stage_8.png
+|   |       |       barley_stage_9.png
+|   |       |       
+|   |       +---bean
+|   |       |       bean_stage_1.png
+|   |       |       bean_stage_10.png
+|   |       |       bean_stage_2.png
+|   |       |       bean_stage_3.png
+|   |       |       bean_stage_4.png
+|   |       |       bean_stage_5.png
+|   |       |       bean_stage_6.png
+|   |       |       bean_stage_7.png
+|   |       |       bean_stage_8.png
+|   |       |       bean_stage_9.png
+|   |       |       
+|   |       +---bean-2
+|   |       |       bean-2_stage_1.png
+|   |       |       bean-2_stage_10.png
+|   |       |       bean-2_stage_2.png
+|   |       |       bean-2_stage_3.png
+|   |       |       bean-2_stage_4.png
+|   |       |       bean-2_stage_5.png
+|   |       |       bean-2_stage_6.png
+|   |       |       bean-2_stage_7.png
+|   |       |       bean-2_stage_8.png
+|   |       |       bean-2_stage_9.png
+|   |       |       
+|   |       +---bok-choy
+|   |       |       bok-choy_stage_1.png
+|   |       |       bok-choy_stage_10.png
+|   |       |       bok-choy_stage_2.png
+|   |       |       bok-choy_stage_3.png
+|   |       |       bok-choy_stage_4.png
+|   |       |       bok-choy_stage_5.png
+|   |       |       bok-choy_stage_6.png
+|   |       |       bok-choy_stage_7.png
+|   |       |       bok-choy_stage_8.png
+|   |       |       bok-choy_stage_9.png
+|   |       |       
+|   |       +---broccoli
+|   |       |       broccoli_stage_1.png
+|   |       |       broccoli_stage_10.png
+|   |       |       broccoli_stage_2.png
+|   |       |       broccoli_stage_3.png
+|   |       |       broccoli_stage_4.png
+|   |       |       broccoli_stage_5.png
+|   |       |       broccoli_stage_6.png
+|   |       |       broccoli_stage_7.png
+|   |       |       broccoli_stage_8.png
+|   |       |       broccoli_stage_9.png
+|   |       |       
+|   |       +---brussels-sprouts
+|   |       |       brussels-sprouts_stage_1.png
+|   |       |       brussels-sprouts_stage_10.png
+|   |       |       brussels-sprouts_stage_2.png
+|   |       |       brussels-sprouts_stage_3.png
+|   |       |       brussels-sprouts_stage_4.png
+|   |       |       brussels-sprouts_stage_5.png
+|   |       |       brussels-sprouts_stage_6.png
+|   |       |       brussels-sprouts_stage_7.png
+|   |       |       brussels-sprouts_stage_8.png
+|   |       |       brussels-sprouts_stage_9.png
+|   |       |       
+|   |       +---buckwheat
+|   |       |       buckwheat_stage_1.png
+|   |       |       buckwheat_stage_10.png
+|   |       |       buckwheat_stage_2.png
+|   |       |       buckwheat_stage_3.png
+|   |       |       buckwheat_stage_4.png
+|   |       |       buckwheat_stage_5.png
+|   |       |       buckwheat_stage_6.png
+|   |       |       buckwheat_stage_7.png
+|   |       |       buckwheat_stage_8.png
+|   |       |       buckwheat_stage_9.png
+|   |       |       
+|   |       +---carrot
+|   |       |       carrot_stage_1.png
+|   |       |       carrot_stage_10.png
+|   |       |       carrot_stage_2.png
+|   |       |       carrot_stage_3.png
+|   |       |       carrot_stage_4.png
+|   |       |       carrot_stage_5.png
+|   |       |       carrot_stage_6.png
+|   |       |       carrot_stage_7.png
+|   |       |       carrot_stage_8.png
+|   |       |       carrot_stage_9.png
+|   |       |       
+|   |       +---cauliflower
+|   |       |       cauliflower_stage_1.png
+|   |       |       cauliflower_stage_10.png
+|   |       |       cauliflower_stage_2.png
+|   |       |       cauliflower_stage_3.png
+|   |       |       cauliflower_stage_4.png
+|   |       |       cauliflower_stage_5.png
+|   |       |       cauliflower_stage_6.png
+|   |       |       cauliflower_stage_7.png
+|   |       |       cauliflower_stage_8.png
+|   |       |       cauliflower_stage_9.png
+|   |       |       
+|   |       +---cayenne-pepper
+|   |       |       cayenne-pepper_stage_1.png
+|   |       |       cayenne-pepper_stage_10.png
+|   |       |       cayenne-pepper_stage_2.png
+|   |       |       cayenne-pepper_stage_3.png
+|   |       |       cayenne-pepper_stage_4.png
+|   |       |       cayenne-pepper_stage_5.png
+|   |       |       cayenne-pepper_stage_6.png
+|   |       |       cayenne-pepper_stage_7.png
+|   |       |       cayenne-pepper_stage_8.png
+|   |       |       cayenne-pepper_stage_9.png
+|   |       |       
+|   |       +---celery
+|   |       |       celery_stage_1.png
+|   |       |       celery_stage_10.png
+|   |       |       celery_stage_2.png
+|   |       |       celery_stage_3.png
+|   |       |       celery_stage_4.png
+|   |       |       celery_stage_5.png
+|   |       |       celery_stage_6.png
+|   |       |       celery_stage_7.png
+|   |       |       celery_stage_8.png
+|   |       |       celery_stage_9.png
+|   |       |       
+|   |       +---chickpea-2
+|   |       |       chickpea-2_stage_1.png
+|   |       |       chickpea-2_stage_10.png
+|   |       |       chickpea-2_stage_2.png
+|   |       |       chickpea-2_stage_3.png
+|   |       |       chickpea-2_stage_4.png
+|   |       |       chickpea-2_stage_5.png
+|   |       |       chickpea-2_stage_6.png
+|   |       |       chickpea-2_stage_7.png
+|   |       |       chickpea-2_stage_8.png
+|   |       |       chickpea-2_stage_9.png
+|   |       |       
+|   |       +---chicory
+|   |       |       chicory_stage_1.png
+|   |       |       chicory_stage_10.png
+|   |       |       chicory_stage_2.png
+|   |       |       chicory_stage_3.png
+|   |       |       chicory_stage_4.png
+|   |       |       chicory_stage_5.png
+|   |       |       chicory_stage_6.png
+|   |       |       chicory_stage_7.png
+|   |       |       chicory_stage_8.png
+|   |       |       chicory_stage_9.png
+|   |       |       
+|   |       +---chicory-2
+|   |       |       chicory-2_stage_1.png
+|   |       |       chicory-2_stage_10.png
+|   |       |       chicory-2_stage_2.png
+|   |       |       chicory-2_stage_3.png
+|   |       |       chicory-2_stage_4.png
+|   |       |       chicory-2_stage_5.png
+|   |       |       chicory-2_stage_6.png
+|   |       |       chicory-2_stage_7.png
+|   |       |       chicory-2_stage_8.png
+|   |       |       chicory-2_stage_9.png
+|   |       |       
+|   |       +---clover
+|   |       |       clover_stage_1.png
+|   |       |       clover_stage_10.png
+|   |       |       clover_stage_2.png
+|   |       |       clover_stage_3.png
+|   |       |       clover_stage_4.png
+|   |       |       clover_stage_5.png
+|   |       |       clover_stage_6.png
+|   |       |       clover_stage_7.png
+|   |       |       clover_stage_8.png
+|   |       |       clover_stage_9.png
+|   |       |       
+|   |       +---clover-2
+|   |       |       clover-2_stage_1.png
+|   |       |       clover-2_stage_10.png
+|   |       |       clover-2_stage_2.png
+|   |       |       clover-2_stage_3.png
+|   |       |       clover-2_stage_4.png
+|   |       |       clover-2_stage_5.png
+|   |       |       clover-2_stage_6.png
+|   |       |       clover-2_stage_7.png
+|   |       |       clover-2_stage_8.png
+|   |       |       clover-2_stage_9.png
+|   |       |       
+|   |       +---common-vetch-
+|   |       |       common-vetch-_stage_1.png
+|   |       |       common-vetch-_stage_10.png
+|   |       |       common-vetch-_stage_2.png
+|   |       |       common-vetch-_stage_3.png
+|   |       |       common-vetch-_stage_4.png
+|   |       |       common-vetch-_stage_5.png
+|   |       |       common-vetch-_stage_6.png
+|   |       |       common-vetch-_stage_7.png
+|   |       |       common-vetch-_stage_8.png
+|   |       |       common-vetch-_stage_9.png
+|   |       |       
+|   |       +---corn
+|   |       |       corn_stage_1.png
+|   |       |       corn_stage_10.png
+|   |       |       corn_stage_2.png
+|   |       |       corn_stage_3.png
+|   |       |       corn_stage_4.png
+|   |       |       corn_stage_5.png
+|   |       |       corn_stage_6.png
+|   |       |       corn_stage_7.png
+|   |       |       corn_stage_8.png
+|   |       |       corn_stage_9.png
+|   |       |       
+|   |       +---cotton
+|   |       |       cotton_stage_1.png
+|   |       |       cotton_stage_10.png
+|   |       |       cotton_stage_2.png
+|   |       |       cotton_stage_3.png
+|   |       |       cotton_stage_4.png
+|   |       |       cotton_stage_5.png
+|   |       |       cotton_stage_6.png
+|   |       |       cotton_stage_7.png
+|   |       |       cotton_stage_8.png
+|   |       |       cotton_stage_9.png
+|   |       |       
+|   |       +---cotton-2
+|   |       |       cotton-2_stage_1.png
+|   |       |       cotton-2_stage_10.png
+|   |       |       cotton-2_stage_2.png
+|   |       |       cotton-2_stage_3.png
+|   |       |       cotton-2_stage_4.png
+|   |       |       cotton-2_stage_5.png
+|   |       |       cotton-2_stage_6.png
+|   |       |       cotton-2_stage_7.png
+|   |       |       cotton-2_stage_8.png
+|   |       |       cotton-2_stage_9.png
+|   |       |       
+|   |       +---couch-grass
+|   |       |       couch-grass_stage_1.png
+|   |       |       couch-grass_stage_10.png
+|   |       |       couch-grass_stage_2.png
+|   |       |       couch-grass_stage_3.png
+|   |       |       couch-grass_stage_4.png
+|   |       |       couch-grass_stage_5.png
+|   |       |       couch-grass_stage_6.png
+|   |       |       couch-grass_stage_7.png
+|   |       |       couch-grass_stage_8.png
+|   |       |       couch-grass_stage_9.png
+|   |       |       
+|   |       +---Cowpea
+|   |       |       Cowpea_stage_1.png
+|   |       |       Cowpea_stage_10.png
+|   |       |       Cowpea_stage_2.png
+|   |       |       Cowpea_stage_3.png
+|   |       |       Cowpea_stage_4.png
+|   |       |       Cowpea_stage_5.png
+|   |       |       Cowpea_stage_6.png
+|   |       |       Cowpea_stage_7.png
+|   |       |       Cowpea_stage_8.png
+|   |       |       Cowpea_stage_9.png
+|   |       |       
+|   |       +---cucumber
+|   |       |       cucumber_stage_1.png
+|   |       |       cucumber_stage_10.png
+|   |       |       cucumber_stage_2.png
+|   |       |       cucumber_stage_3.png
+|   |       |       cucumber_stage_4.png
+|   |       |       cucumber_stage_5.png
+|   |       |       cucumber_stage_6.png
+|   |       |       cucumber_stage_7.png
+|   |       |       cucumber_stage_8.png
+|   |       |       cucumber_stage_9.png
+|   |       |       
+|   |       +---daikon
+|   |       |       daikon_stage_1.png
+|   |       |       daikon_stage_10.png
+|   |       |       daikon_stage_2.png
+|   |       |       daikon_stage_3.png
+|   |       |       daikon_stage_4.png
+|   |       |       daikon_stage_5.png
+|   |       |       daikon_stage_6.png
+|   |       |       daikon_stage_7.png
+|   |       |       daikon_stage_8.png
+|   |       |       daikon_stage_9.png
+|   |       |       
+|   |       +---dill
+|   |       |       dill_stage_1.png
+|   |       |       dill_stage_10.png
+|   |       |       dill_stage_2.png
+|   |       |       dill_stage_3.png
+|   |       |       dill_stage_4.png
+|   |       |       dill_stage_5.png
+|   |       |       dill_stage_6.png
+|   |       |       dill_stage_7.png
+|   |       |       dill_stage_8.png
+|   |       |       dill_stage_9.png
+|   |       |       
+|   |       +---eggplant
+|   |       |       eggplant_stage_1.png
+|   |       |       eggplant_stage_10.png
+|   |       |       eggplant_stage_2.png
+|   |       |       eggplant_stage_3.png
+|   |       |       eggplant_stage_4.png
+|   |       |       eggplant_stage_5.png
+|   |       |       eggplant_stage_6.png
+|   |       |       eggplant_stage_7.png
+|   |       |       eggplant_stage_8.png
+|   |       |       eggplant_stage_9.png
+|   |       |       
+|   |       +---fennel
+|   |       |       fennel_stage_1.png
+|   |       |       fennel_stage_10.png
+|   |       |       fennel_stage_2.png
+|   |       |       fennel_stage_3.png
+|   |       |       fennel_stage_4.png
+|   |       |       fennel_stage_5.png
+|   |       |       fennel_stage_6.png
+|   |       |       fennel_stage_7.png
+|   |       |       fennel_stage_8.png
+|   |       |       fennel_stage_9.png
+|   |       |       
+|   |       +---flax
+|   |       |       flax_stage_1.png
+|   |       |       flax_stage_10.png
+|   |       |       flax_stage_2.png
+|   |       |       flax_stage_3.png
+|   |       |       flax_stage_4.png
+|   |       |       flax_stage_5.png
+|   |       |       flax_stage_6.png
+|   |       |       flax_stage_7.png
+|   |       |       flax_stage_8.png
+|   |       |       flax_stage_9.png
+|   |       |       
+|   |       +---flax-2
+|   |       |       flax-2_stage_1.png
+|   |       |       flax-2_stage_10.png
+|   |       |       flax-2_stage_2.png
+|   |       |       flax-2_stage_3.png
+|   |       |       flax-2_stage_4.png
+|   |       |       flax-2_stage_5.png
+|   |       |       flax-2_stage_6.png
+|   |       |       flax-2_stage_7.png
+|   |       |       flax-2_stage_8.png
+|   |       |       flax-2_stage_9.png
+|   |       |       
+|   |       +---garlic
+|   |       |       garlic_stage_1.png
+|   |       |       garlic_stage_10.png
+|   |       |       garlic_stage_2.png
+|   |       |       garlic_stage_3.png
+|   |       |       garlic_stage_4.png
+|   |       |       garlic_stage_5.png
+|   |       |       garlic_stage_6.png
+|   |       |       garlic_stage_7.png
+|   |       |       garlic_stage_8.png
+|   |       |       garlic_stage_9.png
+|   |       |       
+|   |       +---grape
+|   |       |       grape_stage_1.png
+|   |       |       grape_stage_10.png
+|   |       |       grape_stage_2.png
+|   |       |       grape_stage_3.png
+|   |       |       grape_stage_4.png
+|   |       |       grape_stage_5.png
+|   |       |       grape_stage_6.png
+|   |       |       grape_stage_7.png
+|   |       |       grape_stage_8.png
+|   |       |       grape_stage_9.png
+|   |       |       
+|   |       +---grape-2
+|   |       |       grape-2_stage_1.png
+|   |       |       grape-2_stage_10.png
+|   |       |       grape-2_stage_2.png
+|   |       |       grape-2_stage_3.png
+|   |       |       grape-2_stage_4.png
+|   |       |       grape-2_stage_5.png
+|   |       |       grape-2_stage_6.png
+|   |       |       grape-2_stage_7.png
+|   |       |       grape-2_stage_8.png
+|   |       |       grape-2_stage_9.png
+|   |       |       
+|   |       +---grape-3
+|   |       |       grape-3_stage_1.png
+|   |       |       grape-3_stage_10.png
+|   |       |       grape-3_stage_2.png
+|   |       |       grape-3_stage_3.png
+|   |       |       grape-3_stage_4.png
+|   |       |       grape-3_stage_5.png
+|   |       |       grape-3_stage_6.png
+|   |       |       grape-3_stage_7.png
+|   |       |       grape-3_stage_8.png
+|   |       |       grape-3_stage_9.png
+|   |       |       
+|   |       +---grape-4
+|   |       |       grape-4_stage_1.png
+|   |       |       grape-4_stage_10.png
+|   |       |       grape-4_stage_2.png
+|   |       |       grape-4_stage_3.png
+|   |       |       grape-4_stage_4.png
+|   |       |       grape-4_stage_5.png
+|   |       |       grape-4_stage_6.png
+|   |       |       grape-4_stage_7.png
+|   |       |       grape-4_stage_8.png
+|   |       |       grape-4_stage_9.png
+|   |       |       
+|   |       +---hemp
+|   |       |       hemp_stage_1.png
+|   |       |       hemp_stage_10.png
+|   |       |       hemp_stage_2.png
+|   |       |       hemp_stage_3.png
+|   |       |       hemp_stage_4.png
+|   |       |       hemp_stage_5.png
+|   |       |       hemp_stage_6.png
+|   |       |       hemp_stage_7.png
+|   |       |       hemp_stage_8.png
+|   |       |       hemp_stage_9.png
+|   |       |       
+|   |       +---hemp-2
+|   |       |       hemp-2_stage_1.png
+|   |       |       hemp-2_stage_10.png
+|   |       |       hemp-2_stage_2.png
+|   |       |       hemp-2_stage_3.png
+|   |       |       hemp-2_stage_4.png
+|   |       |       hemp-2_stage_5.png
+|   |       |       hemp-2_stage_6.png
+|   |       |       hemp-2_stage_7.png
+|   |       |       hemp-2_stage_8.png
+|   |       |       hemp-2_stage_9.png
+|   |       |       
+|   |       +---hops
+|   |       |       hops_stage_1.png
+|   |       |       hops_stage_10.png
+|   |       |       hops_stage_2.png
+|   |       |       hops_stage_3.png
+|   |       |       hops_stage_4.png
+|   |       |       hops_stage_5.png
+|   |       |       hops_stage_6.png
+|   |       |       hops_stage_7.png
+|   |       |       hops_stage_8.png
+|   |       |       hops_stage_9.png
+|   |       |       
+|   |       +---kale
+|   |       |       kale_stage_1.png
+|   |       |       kale_stage_10.png
+|   |       |       kale_stage_2.png
+|   |       |       kale_stage_3.png
+|   |       |       kale_stage_4.png
+|   |       |       kale_stage_5.png
+|   |       |       kale_stage_6.png
+|   |       |       kale_stage_7.png
+|   |       |       kale_stage_8.png
+|   |       |       kale_stage_9.png
+|   |       |       
+|   |       +---kohlrabi
+|   |       |       kohlrabi_stage_1.png
+|   |       |       kohlrabi_stage_10.png
+|   |       |       kohlrabi_stage_2.png
+|   |       |       kohlrabi_stage_3.png
+|   |       |       kohlrabi_stage_4.png
+|   |       |       kohlrabi_stage_5.png
+|   |       |       kohlrabi_stage_6.png
+|   |       |       kohlrabi_stage_7.png
+|   |       |       kohlrabi_stage_8.png
+|   |       |       kohlrabi_stage_9.png
+|   |       |       
+|   |       +---leek
+|   |       |       leek_stage_1.png
+|   |       |       leek_stage_10.png
+|   |       |       leek_stage_2.png
+|   |       |       leek_stage_3.png
+|   |       |       leek_stage_4.png
+|   |       |       leek_stage_5.png
+|   |       |       leek_stage_6.png
+|   |       |       leek_stage_7.png
+|   |       |       leek_stage_8.png
+|   |       |       leek_stage_9.png
+|   |       |       
+|   |       +---lentil
+|   |       |       lentil_stage_1.png
+|   |       |       lentil_stage_10.png
+|   |       |       lentil_stage_2.png
+|   |       |       lentil_stage_3.png
+|   |       |       lentil_stage_4.png
+|   |       |       lentil_stage_5.png
+|   |       |       lentil_stage_6.png
+|   |       |       lentil_stage_7.png
+|   |       |       lentil_stage_8.png
+|   |       |       lentil_stage_9.png
+|   |       |       
+|   |       +---lettuce
+|   |       |       lettuce_stage_1.png
+|   |       |       lettuce_stage_10.png
+|   |       |       lettuce_stage_2.png
+|   |       |       lettuce_stage_3.png
+|   |       |       lettuce_stage_4.png
+|   |       |       lettuce_stage_5.png
+|   |       |       lettuce_stage_6.png
+|   |       |       lettuce_stage_7.png
+|   |       |       lettuce_stage_8.png
+|   |       |       lettuce_stage_9.png
+|   |       |       
+|   |       +---melon
+|   |       |       melon_stage_1.png
+|   |       |       melon_stage_10.png
+|   |       |       melon_stage_2.png
+|   |       |       melon_stage_3.png
+|   |       |       melon_stage_4.png
+|   |       |       melon_stage_5.png
+|   |       |       melon_stage_6.png
+|   |       |       melon_stage_7.png
+|   |       |       melon_stage_8.png
+|   |       |       melon_stage_9.png
+|   |       |       
+|   |       +---oat
+|   |       |       oat_stage_1.png
+|   |       |       oat_stage_10.png
+|   |       |       oat_stage_2.png
+|   |       |       oat_stage_3.png
+|   |       |       oat_stage_4.png
+|   |       |       oat_stage_5.png
+|   |       |       oat_stage_6.png
+|   |       |       oat_stage_7.png
+|   |       |       oat_stage_8.png
+|   |       |       oat_stage_9.png
+|   |       |       
+|   |       +---oilseed-radish
+|   |       |       oilseed-radish_stage_1.png
+|   |       |       oilseed-radish_stage_10.png
+|   |       |       oilseed-radish_stage_2.png
+|   |       |       oilseed-radish_stage_3.png
+|   |       |       oilseed-radish_stage_4.png
+|   |       |       oilseed-radish_stage_5.png
+|   |       |       oilseed-radish_stage_6.png
+|   |       |       oilseed-radish_stage_7.png
+|   |       |       oilseed-radish_stage_8.png
+|   |       |       oilseed-radish_stage_9.png
+|   |       |       
+|   |       +---okra
+|   |       |       okra_stage_1.png
+|   |       |       okra_stage_10.png
+|   |       |       okra_stage_2.png
+|   |       |       okra_stage_3.png
+|   |       |       okra_stage_4.png
+|   |       |       okra_stage_5.png
+|   |       |       okra_stage_6.png
+|   |       |       okra_stage_7.png
+|   |       |       okra_stage_8.png
+|   |       |       okra_stage_9.png
+|   |       |       
+|   |       +---onion
+|   |       |       onion_stage_1.png
+|   |       |       onion_stage_10.png
+|   |       |       onion_stage_2.png
+|   |       |       onion_stage_3.png
+|   |       |       onion_stage_4.png
+|   |       |       onion_stage_5.png
+|   |       |       onion_stage_6.png
+|   |       |       onion_stage_7.png
+|   |       |       onion_stage_8.png
+|   |       |       onion_stage_9.png
+|   |       |       
+|   |       +---parsnip
+|   |       |       parsnip_stage_1.png
+|   |       |       parsnip_stage_10.png
+|   |       |       parsnip_stage_2.png
+|   |       |       parsnip_stage_3.png
+|   |       |       parsnip_stage_4.png
+|   |       |       parsnip_stage_5.png
+|   |       |       parsnip_stage_6.png
+|   |       |       parsnip_stage_7.png
+|   |       |       parsnip_stage_8.png
+|   |       |       parsnip_stage_9.png
+|   |       |       
+|   |       +---Pea
+|   |       |       Pea_stage_1.png
+|   |       |       Pea_stage_10.png
+|   |       |       Pea_stage_2.png
+|   |       |       Pea_stage_3.png
+|   |       |       Pea_stage_4.png
+|   |       |       Pea_stage_5.png
+|   |       |       Pea_stage_6.png
+|   |       |       Pea_stage_7.png
+|   |       |       Pea_stage_8.png
+|   |       |       Pea_stage_9.png
+|   |       |       
+|   |       +---Pea-2
+|   |       |       Pea-2_stage_1.png
+|   |       |       Pea-2_stage_10.png
+|   |       |       Pea-2_stage_2.png
+|   |       |       Pea-2_stage_3.png
+|   |       |       Pea-2_stage_4.png
+|   |       |       Pea-2_stage_5.png
+|   |       |       Pea-2_stage_6.png
+|   |       |       Pea-2_stage_7.png
+|   |       |       Pea-2_stage_8.png
+|   |       |       Pea-2_stage_9.png
+|   |       |       
+|   |       +---peanut
+|   |       |       peanut_stage_1.png
+|   |       |       peanut_stage_10.png
+|   |       |       peanut_stage_2.png
+|   |       |       peanut_stage_3.png
+|   |       |       peanut_stage_4.png
+|   |       |       peanut_stage_5.png
+|   |       |       peanut_stage_6.png
+|   |       |       peanut_stage_7.png
+|   |       |       peanut_stage_8.png
+|   |       |       peanut_stage_9.png
+|   |       |       
+|   |       +---peanut-2
+|   |       |       peanut-2_stage_1.png
+|   |       |       peanut-2_stage_10.png
+|   |       |       peanut-2_stage_2.png
+|   |       |       peanut-2_stage_3.png
+|   |       |       peanut-2_stage_4.png
+|   |       |       peanut-2_stage_5.png
+|   |       |       peanut-2_stage_6.png
+|   |       |       peanut-2_stage_7.png
+|   |       |       peanut-2_stage_8.png
+|   |       |       peanut-2_stage_9.png
+|   |       |       
+|   |       +---pepper
+|   |       |       pepper_stage_1.png
+|   |       |       pepper_stage_10.png
+|   |       |       pepper_stage_2.png
+|   |       |       pepper_stage_3.png
+|   |       |       pepper_stage_4.png
+|   |       |       pepper_stage_5.png
+|   |       |       pepper_stage_6.png
+|   |       |       pepper_stage_7.png
+|   |       |       pepper_stage_8.png
+|   |       |       pepper_stage_9.png
+|   |       |       
+|   |       +---pepper-2
+|   |       |       pepper-2_stage_1.png
+|   |       |       pepper-2_stage_10.png
+|   |       |       pepper-2_stage_2.png
+|   |       |       pepper-2_stage_3.png
+|   |       |       pepper-2_stage_4.png
+|   |       |       pepper-2_stage_5.png
+|   |       |       pepper-2_stage_6.png
+|   |       |       pepper-2_stage_7.png
+|   |       |       pepper-2_stage_8.png
+|   |       |       pepper-2_stage_9.png
+|   |       |       
+|   |       +---perennial-ryegrass
+|   |       |       perennial-ryegrass_stage_1.png
+|   |       |       perennial-ryegrass_stage_10.png
+|   |       |       perennial-ryegrass_stage_2.png
+|   |       |       perennial-ryegrass_stage_3.png
+|   |       |       perennial-ryegrass_stage_4.png
+|   |       |       perennial-ryegrass_stage_5.png
+|   |       |       perennial-ryegrass_stage_6.png
+|   |       |       perennial-ryegrass_stage_7.png
+|   |       |       perennial-ryegrass_stage_8.png
+|   |       |       perennial-ryegrass_stage_9.png
+|   |       |       
+|   |       +---perennial-ryegrass-2
+|   |       |       perennial-ryegrass-2_stage_1.png
+|   |       |       perennial-ryegrass-2_stage_10.png
+|   |       |       perennial-ryegrass-2_stage_2.png
+|   |       |       perennial-ryegrass-2_stage_3.png
+|   |       |       perennial-ryegrass-2_stage_4.png
+|   |       |       perennial-ryegrass-2_stage_5.png
+|   |       |       perennial-ryegrass-2_stage_6.png
+|   |       |       perennial-ryegrass-2_stage_7.png
+|   |       |       perennial-ryegrass-2_stage_8.png
+|   |       |       perennial-ryegrass-2_stage_9.png
+|   |       |       
+|   |       +---pineapple
+|   |       |       pineapple_stage_1.png
+|   |       |       pineapple_stage_10.png
+|   |       |       pineapple_stage_2.png
+|   |       |       pineapple_stage_3.png
+|   |       |       pineapple_stage_4.png
+|   |       |       pineapple_stage_5.png
+|   |       |       pineapple_stage_6.png
+|   |       |       pineapple_stage_7.png
+|   |       |       pineapple_stage_8.png
+|   |       |       pineapple_stage_9.png
+|   |       |       
+|   |       +---potato
+|   |       |       potato_stage_1.png
+|   |       |       potato_stage_10.png
+|   |       |       potato_stage_2.png
+|   |       |       potato_stage_3.png
+|   |       |       potato_stage_4.png
+|   |       |       potato_stage_5.png
+|   |       |       potato_stage_6.png
+|   |       |       potato_stage_7.png
+|   |       |       potato_stage_8.png
+|   |       |       potato_stage_9.png
+|   |       |       
+|   |       +---potato-2
+|   |       |       potato-2_stage_1.png
+|   |       |       potato-2_stage_10.png
+|   |       |       potato-2_stage_2.png
+|   |       |       potato-2_stage_3.png
+|   |       |       potato-2_stage_4.png
+|   |       |       potato-2_stage_5.png
+|   |       |       potato-2_stage_6.png
+|   |       |       potato-2_stage_7.png
+|   |       |       potato-2_stage_8.png
+|   |       |       potato-2_stage_9.png
+|   |       |       
+|   |       +---pumpkin
+|   |       |       pumpkin_stage_1.png
+|   |       |       pumpkin_stage_10.png
+|   |       |       pumpkin_stage_2.png
+|   |       |       pumpkin_stage_3.png
+|   |       |       pumpkin_stage_4.png
+|   |       |       pumpkin_stage_5.png
+|   |       |       pumpkin_stage_6.png
+|   |       |       pumpkin_stage_7.png
+|   |       |       pumpkin_stage_8.png
+|   |       |       pumpkin_stage_9.png
+|   |       |       
+|   |       +---quinoa
+|   |       |       quinoa_stage_1.png
+|   |       |       quinoa_stage_10.png
+|   |       |       quinoa_stage_2.png
+|   |       |       quinoa_stage_3.png
+|   |       |       quinoa_stage_4.png
+|   |       |       quinoa_stage_5.png
+|   |       |       quinoa_stage_6.png
+|   |       |       quinoa_stage_7.png
+|   |       |       quinoa_stage_8.png
+|   |       |       quinoa_stage_9.png
+|   |       |       
+|   |       +---radish
+|   |       |       radish_stage_1.png
+|   |       |       radish_stage_10.png
+|   |       |       radish_stage_2.png
+|   |       |       radish_stage_3.png
+|   |       |       radish_stage_4.png
+|   |       |       radish_stage_5.png
+|   |       |       radish_stage_6.png
+|   |       |       radish_stage_7.png
+|   |       |       radish_stage_8.png
+|   |       |       radish_stage_9.png
+|   |       |       
+|   |       +---rapeseed
+|   |       |       rapeseed_stage_1.png
+|   |       |       rapeseed_stage_10.png
+|   |       |       rapeseed_stage_2.png
+|   |       |       rapeseed_stage_3.png
+|   |       |       rapeseed_stage_4.png
+|   |       |       rapeseed_stage_5.png
+|   |       |       rapeseed_stage_6.png
+|   |       |       rapeseed_stage_7.png
+|   |       |       rapeseed_stage_8.png
+|   |       |       rapeseed_stage_9.png
+|   |       |       
+|   |       +---red-beet
+|   |       |       red-beet_stage_1.png
+|   |       |       red-beet_stage_10.png
+|   |       |       red-beet_stage_2.png
+|   |       |       red-beet_stage_3.png
+|   |       |       red-beet_stage_4.png
+|   |       |       red-beet_stage_5.png
+|   |       |       red-beet_stage_6.png
+|   |       |       red-beet_stage_7.png
+|   |       |       red-beet_stage_8.png
+|   |       |       red-beet_stage_9.png
+|   |       |       
+|   |       +---red-cabbage
+|   |       |       red-cabbage_stage_1.png
+|   |       |       red-cabbage_stage_10.png
+|   |       |       red-cabbage_stage_2.png
+|   |       |       red-cabbage_stage_3.png
+|   |       |       red-cabbage_stage_4.png
+|   |       |       red-cabbage_stage_5.png
+|   |       |       red-cabbage_stage_6.png
+|   |       |       red-cabbage_stage_7.png
+|   |       |       red-cabbage_stage_8.png
+|   |       |       red-cabbage_stage_9.png
+|   |       |       
+|   |       +---rice
+|   |       |       rice_stage_1.png
+|   |       |       rice_stage_10.png
+|   |       |       rice_stage_2.png
+|   |       |       rice_stage_3.png
+|   |       |       rice_stage_4.png
+|   |       |       rice_stage_5.png
+|   |       |       rice_stage_6.png
+|   |       |       rice_stage_7.png
+|   |       |       rice_stage_8.png
+|   |       |       rice_stage_9.png
+|   |       |       
+|   |       +---rice-2
+|   |       |       rice-2_stage_1.png
+|   |       |       rice-2_stage_10.png
+|   |       |       rice-2_stage_2.png
+|   |       |       rice-2_stage_3.png
+|   |       |       rice-2_stage_4.png
+|   |       |       rice-2_stage_5.png
+|   |       |       rice-2_stage_6.png
+|   |       |       rice-2_stage_7.png
+|   |       |       rice-2_stage_8.png
+|   |       |       rice-2_stage_9.png
+|   |       |       
+|   |       +---rutabaga
+|   |       |       rutabaga_stage_1.png
+|   |       |       rutabaga_stage_10.png
+|   |       |       rutabaga_stage_2.png
+|   |       |       rutabaga_stage_3.png
+|   |       |       rutabaga_stage_4.png
+|   |       |       rutabaga_stage_5.png
+|   |       |       rutabaga_stage_6.png
+|   |       |       rutabaga_stage_7.png
+|   |       |       rutabaga_stage_8.png
+|   |       |       rutabaga_stage_9.png
+|   |       |       
+|   |       +---sesame
+|   |       |       sesame_stage_1.png
+|   |       |       sesame_stage_10.png
+|   |       |       sesame_stage_2.png
+|   |       |       sesame_stage_3.png
+|   |       |       sesame_stage_4.png
+|   |       |       sesame_stage_5.png
+|   |       |       sesame_stage_6.png
+|   |       |       sesame_stage_7.png
+|   |       |       sesame_stage_8.png
+|   |       |       sesame_stage_9.png
+|   |       |       
+|   |       +---sorghum
+|   |       |       sorghum_stage_1.png
+|   |       |       sorghum_stage_10.png
+|   |       |       sorghum_stage_2.png
+|   |       |       sorghum_stage_3.png
+|   |       |       sorghum_stage_4.png
+|   |       |       sorghum_stage_5.png
+|   |       |       sorghum_stage_6.png
+|   |       |       sorghum_stage_7.png
+|   |       |       sorghum_stage_8.png
+|   |       |       sorghum_stage_9.png
+|   |       |       
+|   |       +---soybean
+|   |       |       soybean_stage_1.png
+|   |       |       soybean_stage_10.png
+|   |       |       soybean_stage_2.png
+|   |       |       soybean_stage_3.png
+|   |       |       soybean_stage_4.png
+|   |       |       soybean_stage_5.png
+|   |       |       soybean_stage_6.png
+|   |       |       soybean_stage_7.png
+|   |       |       soybean_stage_8.png
+|   |       |       soybean_stage_9.png
+|   |       |       
+|   |       +---soybean-2
+|   |       |       soybean-2_stage_1.png
+|   |       |       soybean-2_stage_10.png
+|   |       |       soybean-2_stage_2.png
+|   |       |       soybean-2_stage_3.png
+|   |       |       soybean-2_stage_4.png
+|   |       |       soybean-2_stage_5.png
+|   |       |       soybean-2_stage_6.png
+|   |       |       soybean-2_stage_7.png
+|   |       |       soybean-2_stage_8.png
+|   |       |       soybean-2_stage_9.png
+|   |       |       
+|   |       +---soybean-3
+|   |       |       soybean-3_stage_1.png
+|   |       |       soybean-3_stage_10.png
+|   |       |       soybean-3_stage_2.png
+|   |       |       soybean-3_stage_3.png
+|   |       |       soybean-3_stage_4.png
+|   |       |       soybean-3_stage_5.png
+|   |       |       soybean-3_stage_6.png
+|   |       |       soybean-3_stage_7.png
+|   |       |       soybean-3_stage_8.png
+|   |       |       soybean-3_stage_9.png
+|   |       |       
+|   |       +---spinach
+|   |       |       spinach_stage_1.png
+|   |       |       spinach_stage_10.png
+|   |       |       spinach_stage_2.png
+|   |       |       spinach_stage_3.png
+|   |       |       spinach_stage_4.png
+|   |       |       spinach_stage_5.png
+|   |       |       spinach_stage_6.png
+|   |       |       spinach_stage_7.png
+|   |       |       spinach_stage_8.png
+|   |       |       spinach_stage_9.png
+|   |       |       
+|   |       +---strawberry
+|   |       |       strawberry_stage_1.png
+|   |       |       strawberry_stage_10.png
+|   |       |       strawberry_stage_2.png
+|   |       |       strawberry_stage_3.png
+|   |       |       strawberry_stage_4.png
+|   |       |       strawberry_stage_5.png
+|   |       |       strawberry_stage_6.png
+|   |       |       strawberry_stage_7.png
+|   |       |       strawberry_stage_8.png
+|   |       |       strawberry_stage_9.png
+|   |       |       
+|   |       +---sugar-beet
+|   |       |       sugar-beet_stage_1.png
+|   |       |       sugar-beet_stage_10.png
+|   |       |       sugar-beet_stage_2.png
+|   |       |       sugar-beet_stage_3.png
+|   |       |       sugar-beet_stage_4.png
+|   |       |       sugar-beet_stage_5.png
+|   |       |       sugar-beet_stage_6.png
+|   |       |       sugar-beet_stage_7.png
+|   |       |       sugar-beet_stage_8.png
+|   |       |       sugar-beet_stage_9.png
+|   |       |       
+|   |       +---sugar-beet-2
+|   |       |       sugar-beet-2_stage_1.png
+|   |       |       sugar-beet-2_stage_10.png
+|   |       |       sugar-beet-2_stage_2.png
+|   |       |       sugar-beet-2_stage_3.png
+|   |       |       sugar-beet-2_stage_4.png
+|   |       |       sugar-beet-2_stage_5.png
+|   |       |       sugar-beet-2_stage_6.png
+|   |       |       sugar-beet-2_stage_7.png
+|   |       |       sugar-beet-2_stage_8.png
+|   |       |       sugar-beet-2_stage_9.png
+|   |       |       
+|   |       +---sugarcane
+|   |       |       sugarcane_stage_1.png
+|   |       |       sugarcane_stage_10.png
+|   |       |       sugarcane_stage_2.png
+|   |       |       sugarcane_stage_3.png
+|   |       |       sugarcane_stage_4.png
+|   |       |       sugarcane_stage_5.png
+|   |       |       sugarcane_stage_6.png
+|   |       |       sugarcane_stage_7.png
+|   |       |       sugarcane_stage_8.png
+|   |       |       sugarcane_stage_9.png
+|   |       |       
+|   |       +---sugarcane-2
+|   |       |       sugarcane-2_stage_1.png
+|   |       |       sugarcane-2_stage_10.png
+|   |       |       sugarcane-2_stage_2.png
+|   |       |       sugarcane-2_stage_3.png
+|   |       |       sugarcane-2_stage_4.png
+|   |       |       sugarcane-2_stage_5.png
+|   |       |       sugarcane-2_stage_6.png
+|   |       |       sugarcane-2_stage_7.png
+|   |       |       sugarcane-2_stage_8.png
+|   |       |       sugarcane-2_stage_9.png
+|   |       |       
+|   |       +---sunflower
+|   |       |       sunflower_stage_1.png
+|   |       |       sunflower_stage_10.png
+|   |       |       sunflower_stage_2.png
+|   |       |       sunflower_stage_3.png
+|   |       |       sunflower_stage_4.png
+|   |       |       sunflower_stage_5.png
+|   |       |       sunflower_stage_6.png
+|   |       |       sunflower_stage_7.png
+|   |       |       sunflower_stage_8.png
+|   |       |       sunflower_stage_9.png
+|   |       |       
+|   |       +---sweet-potato
+|   |       |       sweet-potato_stage_1.png
+|   |       |       sweet-potato_stage_10.png
+|   |       |       sweet-potato_stage_2.png
+|   |       |       sweet-potato_stage_3.png
+|   |       |       sweet-potato_stage_4.png
+|   |       |       sweet-potato_stage_5.png
+|   |       |       sweet-potato_stage_6.png
+|   |       |       sweet-potato_stage_7.png
+|   |       |       sweet-potato_stage_8.png
+|   |       |       sweet-potato_stage_9.png
+|   |       |       
+|   |       +---tomato
+|   |       |       tomato_stage_1.png
+|   |       |       tomato_stage_10.png
+|   |       |       tomato_stage_2.png
+|   |       |       tomato_stage_3.png
+|   |       |       tomato_stage_4.png
+|   |       |       tomato_stage_5.png
+|   |       |       tomato_stage_6.png
+|   |       |       tomato_stage_7.png
+|   |       |       tomato_stage_8.png
+|   |       |       tomato_stage_9.png
+|   |       |       
+|   |       +---tomato-2
+|   |       |       tomato-2_stage_1.png
+|   |       |       tomato-2_stage_10.png
+|   |       |       tomato-2_stage_2.png
+|   |       |       tomato-2_stage_3.png
+|   |       |       tomato-2_stage_4.png
+|   |       |       tomato-2_stage_5.png
+|   |       |       tomato-2_stage_6.png
+|   |       |       tomato-2_stage_7.png
+|   |       |       tomato-2_stage_8.png
+|   |       |       tomato-2_stage_9.png
+|   |       |       
+|   |       +---turnip
+|   |       |       turnip_stage_1.png
+|   |       |       turnip_stage_10.png
+|   |       |       turnip_stage_2.png
+|   |       |       turnip_stage_3.png
+|   |       |       turnip_stage_4.png
+|   |       |       turnip_stage_5.png
+|   |       |       turnip_stage_6.png
+|   |       |       turnip_stage_7.png
+|   |       |       turnip_stage_8.png
+|   |       |       turnip_stage_9.png
+|   |       |       
+|   |       +---watermelon
+|   |       |       watermelon_stage_1.png
+|   |       |       watermelon_stage_10.png
+|   |       |       watermelon_stage_2.png
+|   |       |       watermelon_stage_3.png
+|   |       |       watermelon_stage_4.png
+|   |       |       watermelon_stage_5.png
+|   |       |       watermelon_stage_6.png
+|   |       |       watermelon_stage_7.png
+|   |       |       watermelon_stage_8.png
+|   |       |       watermelon_stage_9.png
+|   |       |       
+|   |       +---wheat
+|   |       |       wheat_stage_1.png
+|   |       |       wheat_stage_10.png
+|   |       |       wheat_stage_2.png
+|   |       |       wheat_stage_3.png
+|   |       |       wheat_stage_4.png
+|   |       |       wheat_stage_5.png
+|   |       |       wheat_stage_6.png
+|   |       |       wheat_stage_7.png
+|   |       |       wheat_stage_8.png
+|   |       |       wheat_stage_9.png
+|   |       |       
+|   |       +---white-cabbage
+|   |       |       white-cabbage_stage_1.png
+|   |       |       white-cabbage_stage_10.png
+|   |       |       white-cabbage_stage_2.png
+|   |       |       white-cabbage_stage_3.png
+|   |       |       white-cabbage_stage_4.png
+|   |       |       white-cabbage_stage_5.png
+|   |       |       white-cabbage_stage_6.png
+|   |       |       white-cabbage_stage_7.png
+|   |       |       white-cabbage_stage_8.png
+|   |       |       white-cabbage_stage_9.png
+|   |       |       
+|   |       +---white-mustard
+|   |       |       white-mustard_stage_1.png
+|   |       |       white-mustard_stage_10.png
+|   |       |       white-mustard_stage_2.png
+|   |       |       white-mustard_stage_3.png
+|   |       |       white-mustard_stage_4.png
+|   |       |       white-mustard_stage_5.png
+|   |       |       white-mustard_stage_6.png
+|   |       |       white-mustard_stage_7.png
+|   |       |       white-mustard_stage_8.png
+|   |       |       white-mustard_stage_9.png
+|   |       |       
+|   |       \---zucchini
+|   |               zucchini_stage_1.png
+|   |               zucchini_stage_10.png
+|   |               zucchini_stage_2.png
+|   |               zucchini_stage_3.png
+|   |               zucchini_stage_4.png
+|   |               zucchini_stage_5.png
+|   |               zucchini_stage_6.png
+|   |               zucchini_stage_7.png
+|   |               zucchini_stage_8.png
+|   |               zucchini_stage_9.png
+|   |               
+|   \---js
++---crops
+|       Pea-2.html
+|       wheat.html
+|       
++---products
++---scripts
+|       generate_tables.py
+|       
+\---templates
+        table_template.html
+        

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soybean Growth Stages (BBCH) | Crop Stages</title>
+<meta name="description" content="Professional BBCH growth stage illustrations for Soybean (Glycine max). 10 stages from germination to maturity.">
+<meta name="keywords" content="soybean BBCH, soybean growth stages, fertilizer timing soybean, Glycine max">
+<link rel="canonical" href="https://crop-stages.github.io/crops/soybean-3.html">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 40px;
+    color: #4a4f45;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header h1 {
+    font-weight: 400;
+    font-size: clamp(24px, 4vw, 42px);
+    margin: 0;
+    color: #6c7466;
+}
+
+.header .right-title {
+    font-size: clamp(12px, 1.4vw, 16px);
+    letter-spacing: 1px;
+    color: #6c7466;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #5a7a52;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* === TABLE LAYOUT === */
+.stages-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.stages-table .label-col {
+    width: 140px;
+}
+
+.stages-table tr.image-row td {
+    vertical-align: bottom;
+    text-align: center;
+    padding: 10px 2px 15px;
+    position: relative;
+}
+
+.stages-table tr.image-row td:not(:first-child):not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-right: 2px dashed #c5cbbe;
+}
+
+.stages-table tr.image-row td img {
+    max-width: 100%;
+    max-height: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.stages-table tr.data-row td {
+    padding: 10px 5px;
+    font-size: clamp(9px, 1.1vw, 14px);
+    text-align: center;
+    vertical-align: top;
+    border-top: 1px solid #c8cec0;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.stages-table tr.data-row:first-of-type td {
+    border-top: 2px solid #b7bdad;
+}
+
+.stages-table tr.data-row td.label {
+    text-align: left;
+    font-weight: 600;
+    color: #6c7466;
+    padding-right: 10px;
+}
+
+.stages-table tr.data-row td.bbch {
+    font-size: clamp(11px, 1.3vw, 16px);
+    font-weight: 500;
+}
+
+.stages-table tr.data-row.footer-row td {
+    min-height: 40px;
+}
+
+.stages-table tr.data-row.footer-row td .placeholder {
+    color: #c8cec0;
+    font-size: clamp(8px, 0.9vw, 11px);
+    font-style: italic;
+    line-height: 1.3;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1100px) {
+    .stages-table .label-col {
+        width: 110px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px;
+    }
+    .stages-table .label-col {
+        width: 90px;
+    }
+    .stages-table tr.image-row td img {
+        max-height: 140px;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        padding: 16px;
+    }
+    .stages-table {
+        display: none;
+    }
+    .mobile-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .mobile-card {
+        background: #f6f7f5;
+        border-radius: 10px;
+        padding: 14px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    .mobile-card img {
+        width: 70px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .mobile-card .info {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .mobile-card .info .stage-name {
+        font-weight: 600;
+        font-size: 14px;
+        color: #4a4f45;
+    }
+    .mobile-card .info .bbch-code {
+        color: #9da39a;
+        font-size: 12px;
+    }
+    .mobile-card .info .product-hint {
+        color: #c8cec0;
+        font-size: 11px;
+        font-style: italic;
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 541px) {
+    .mobile-cards {
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="../index.html" class="nav-link">&larr; Back to all crops</a>
+
+<div class="header">
+    <h1>Soybean (Glycine max)</h1>
+    <div class="right-title">Botanical Growth Stages</div>
+</div>
+
+<!-- ===== DESKTOP TABLE ===== -->
+<table class="stages-table">
+    <colgroup>
+        <col class="label-col">
+        <col><col><col><col><col><col><col><col><col><col>
+    </colgroup>
+
+    <tr class="image-row">
+        <td></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_1.png" alt="Soybean Stage 1 — Seed"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_2.png" alt="Soybean Stage 2 — Sprouting"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_3.png" alt="Soybean Stage 3 — Emergence"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_4.png" alt="Soybean Stage 4 — Leaf development"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_5.png" alt="Soybean Stage 5 — Stem elongation"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_6.png" alt="Soybean Stage 6 — Bud formation"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_7.png" alt="Soybean Stage 7 — Flowering"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_8.png" alt="Soybean Stage 8 — Pod development"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_9.png" alt="Soybean Stage 9 — Ripening"></td>
+        <td><img src="../assets/images/crops/soybean-3/soybean-3_stage_10.png" alt="Soybean Stage 10 — Senescence"></td>
+    </tr>
+
+    <tr class="data-row">
+        <td class="label">BBCH Stage</td>
+        <td class="bbch">00–09</td>
+        <td class="bbch">10–19</td>
+        <td class="bbch">20–29</td>
+        <td class="bbch">30–39</td>
+        <td class="bbch">40–49</td>
+        <td class="bbch">51–59</td>
+        <td class="bbch">60–69</td>
+        <td class="bbch">70–79</td>
+        <td class="bbch">80–89</td>
+        <td class="bbch">90–99</td>
+    </tr>
+
+    <tr class="data-row">
+        <td class="label">Description</td>
+        <td>Dry seed, imbibition, swelling</td>
+        <td>Radicle emergence, hypocotyl growth</td>
+        <td>Shoot emergence, cotyledon unfolding</td>
+        <td>Leaf and tendril development</td>
+        <td>Stem elongation, shoot growth</td>
+        <td>Bud formation, inflorescence emergence</td>
+        <td>Flowering, anthesis</td>
+        <td>Pod formation and growth</td>
+        <td>Seed ripening, pod yellowing</td>
+        <td>Plant drying, senescence</td>
+    </tr>
+
+    <tr class="data-row footer-row">
+        <td class="label">Your Product</td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+    </tr>
+</table>
+
+<!-- ===== MOBILE CARDS ===== -->
+<div class="mobile-cards">
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_1.png" alt="Soybean Stage 1 — Seed">
+        <div class="info">
+            <div class="stage-name">Dry seed, imbibition, swelling</div>
+            <div class="bbch-code">BBCH 00–09</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_2.png" alt="Soybean Stage 2 — Sprouting">
+        <div class="info">
+            <div class="stage-name">Radicle emergence, hypocotyl growth</div>
+            <div class="bbch-code">BBCH 10–19</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_3.png" alt="Soybean Stage 3 — Emergence">
+        <div class="info">
+            <div class="stage-name">Shoot emergence, cotyledon unfolding</div>
+            <div class="bbch-code">BBCH 20–29</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_4.png" alt="Soybean Stage 4 — Leaf development">
+        <div class="info">
+            <div class="stage-name">Leaf and tendril development</div>
+            <div class="bbch-code">BBCH 30–39</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_5.png" alt="Soybean Stage 5 — Stem elongation">
+        <div class="info">
+            <div class="stage-name">Stem elongation, shoot growth</div>
+            <div class="bbch-code">BBCH 40–49</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_6.png" alt="Soybean Stage 6 — Bud formation">
+        <div class="info">
+            <div class="stage-name">Bud formation, inflorescence emergence</div>
+            <div class="bbch-code">BBCH 51–59</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_7.png" alt="Soybean Stage 7 — Flowering">
+        <div class="info">
+            <div class="stage-name">Flowering, anthesis</div>
+            <div class="bbch-code">BBCH 60–69</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_8.png" alt="Soybean Stage 8 — Pod development">
+        <div class="info">
+            <div class="stage-name">Pod formation and growth</div>
+            <div class="bbch-code">BBCH 70–79</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_9.png" alt="Soybean Stage 9 — Ripening">
+        <div class="info">
+            <div class="stage-name">Seed ripening, pod yellowing</div>
+            <div class="bbch-code">BBCH 80–89</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+    <div class="mobile-card">
+        <img src="../assets/images/crops/soybean-3/soybean-3_stage_10.png" alt="Soybean Stage 10 — Senescence">
+        <div class="info">
+            <div class="stage-name">Plant drying, senescence</div>
+            <div class="bbch-code">BBCH 90–99</div>
+            <div class="product-hint">Add product</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

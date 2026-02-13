@@ -1,204 +1,590 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pea Growth Stages</title>
+<title>Professional BBCH Growth Stage Tables | 93 Crops | Crop Stages</title>
+<meta name="description" content="930 professional BBCH growth stage illustrations for 93 crops. Ready-to-use tables for fertilizer timing, irrigation, and agronomy.">
+<meta name="keywords" content="BBCH growth stages, crop illustrations, fertilizer timing chart, agriculture marketing, crop stage illustrations, BBCH wheat illustration">
+<link rel="canonical" href="https://crop-stages.github.io/">
 
 <style>
 
-* {
-    box-sizing: border-box;
+/* ===================== RESET & BASE ===================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --green-900: #2d3a28;
+    --green-800: #3d4f36;
+    --green-700: #4a6040;
+    --green-600: #5a7a52;
+    --green-500: #6d9461;
+    --green-400: #8aad7e;
+    --green-300: #a8c49e;
+    --green-200: #c8dcc0;
+    --green-100: #e4f0df;
+    --green-50:  #f2f8f0;
+
+    --sage-700: #5c6358;
+    --sage-600: #6c7466;
+    --sage-500: #8a9184;
+    --sage-400: #a8ada3;
+    --sage-300: #c5cbbe;
+    --sage-200: #dce0d8;
+    --sage-100: #eef0ec;
+    --sage-50:  #f6f7f5;
+
+    --text-primary: #2d3a28;
+    --text-secondary: #5c6358;
+    --text-muted: #8a9184;
+    --white: #ffffff;
+    --border: #c8cec0;
+
+    --font-display: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+    --max-width: 1200px;
+    --section-gap: 100px;
 }
+
+html { scroll-behavior: smooth; }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #ffffff;
-    margin: 0;
-    padding: 40px;
-    color: #4a4f45;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-.header {
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--green-600); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ===================== HEADER / NAV ===================== */
+.site-header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--sage-200);
+}
+.site-header .container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.site-logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-700);
+    letter-spacing: 0.5px;
+}
+.site-logo span { font-weight: 300; color: var(--sage-500); }
+.site-nav { display: flex; gap: 28px; align-items: center; }
+.site-nav a {
+    font-size: 14px;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+.site-nav a:hover { color: var(--green-600); text-decoration: none; }
+
+/* ===================== HERO ===================== */
+.hero {
+    padding: 80px 0 60px;
+    text-align: center;
+}
+.hero-label {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-600);
+    background: var(--green-100);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+.hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--green-900);
+    margin-bottom: 20px;
+}
+.hero h1 strong {
+    font-weight: 600;
+}
+.hero-sub {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--text-secondary);
+    max-width: 660px;
+    margin: 0 auto 36px;
+    line-height: 1.5;
+}
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    gap: 10px;
+}
+.hero-stat {
+    text-align: center;
+}
+.hero-stat .num {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 600;
+    color: var(--green-700);
+    line-height: 1;
+}
+.hero-stat .label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+.btn-primary {
+    display: inline-block;
+    background: var(--green-600);
+    color: var(--white);
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: background 0.2s, transform 0.15s;
+    min-height: 44px;
+}
+.btn-primary:hover {
+    background: var(--green-700);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+.btn-secondary {
+    display: inline-block;
+    border: 1.5px solid var(--green-600);
+    color: var(--green-600);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.2s;
+    min-height: 44px;
+}
+.btn-secondary:hover {
+    background: var(--green-50);
+    text-decoration: none;
+}
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.header h1 {
-    font-weight: 400;
-    font-size: clamp(24px, 4vw, 42px);
-    margin: 0;
-    color: #6c7466;
+/* ===================== DEMO TABLE SECTION ===================== */
+.demo-section {
+    padding: 60px 0 var(--section-gap);
+}
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-600);
+    margin-bottom: 12px;
+}
+.section-title {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 300;
+    color: var(--green-900);
+    margin-bottom: 12px;
+}
+.section-title strong { font-weight: 600; }
+.section-desc {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 40px;
 }
 
-.header .right-title {
-    font-size: clamp(12px, 1.4vw, 16px);
-    letter-spacing: 1px;
-    color: #6c7466;
+/* Embedded demo table — reuses the crop table styles */
+.demo-table-wrap {
+    background: var(--sage-50);
+    border-radius: 12px;
+    padding: 32px;
+    overflow-x: auto;
 }
 
-/* === TABLE LAYOUT === */
 .stages-table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    min-width: 900px;
 }
+.stages-table .label-col { width: 130px; }
 
-/* First column — labels */
-.stages-table .label-col {
-    width: 140px;
-}
-
-/* Image row */
 .stages-table tr.image-row td {
     vertical-align: bottom;
     text-align: center;
     padding: 10px 2px 15px;
     position: relative;
 }
-
 .stages-table tr.image-row td:not(:first-child):not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    border-right: 2px dashed #c5cbbe;
+    top: 0; bottom: 0; right: 0;
+    border-right: 2px dashed var(--sage-300);
 }
-
 .stages-table tr.image-row td img {
     max-width: 100%;
-    max-height: 220px;
+    max-height: 180px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-
-/* Data rows */
 .stages-table tr.data-row td {
     padding: 10px 5px;
-    font-size: clamp(9px, 1.1vw, 14px);
+    font-size: clamp(9px, 1.1vw, 13px);
     text-align: center;
     vertical-align: top;
-    border-top: 1px solid #c8cec0;
+    border-top: 1px solid var(--border);
     line-height: 1.35;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
 }
-
 .stages-table tr.data-row:first-of-type td {
     border-top: 2px solid #b7bdad;
 }
-
 .stages-table tr.data-row td.label {
     text-align: left;
     font-weight: 600;
-    color: #6c7466;
+    color: var(--sage-600);
     padding-right: 10px;
 }
-
 .stages-table tr.data-row td.bbch {
-    font-size: clamp(11px, 1.3vw, 16px);
+    font-size: clamp(11px, 1.3vw, 15px);
     font-weight: 500;
 }
-
-/* Footer row — placeholder style */
-.stages-table tr.data-row.footer-row td {
-    min-height: 40px;
-}
-
 .stages-table tr.data-row.footer-row td .placeholder {
-    color: #c8cec0;
+    color: var(--sage-300);
     font-size: clamp(8px, 0.9vw, 11px);
     font-style: italic;
-    line-height: 1.3;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 1100px) {
-    .stages-table .label-col {
-        width: 110px;
-    }
+/* ===================== USE CASES ===================== */
+.use-cases {
+    padding: 0 0 var(--section-gap);
+}
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+.use-case-card {
+    background: var(--sage-50);
+    border-radius: 12px;
+    padding: 32px 28px;
+    transition: transform 0.2s;
+}
+.use-case-card:hover {
+    transform: translateY(-3px);
+}
+.use-case-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--green-100);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+.use-case-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 8px;
+}
+.use-case-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.55;
 }
 
-@media (max-width: 800px) {
-    body {
-        padding: 20px;
-    }
+/* ===================== SPECIES LIST ===================== */
+.species-section {
+    padding: 0 0 var(--section-gap);
+}
+.species-list {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 2;
+    columns: 3;
+    column-gap: 40px;
+}
+.species-list a {
+    display: block;
+    color: var(--text-secondary);
+    transition: color 0.15s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.species-list a:hover { color: var(--green-600); text-decoration: none; }
+.species-list .latin { color: var(--text-muted); font-style: italic; font-size: 13px; }
 
-    .stages-table .label-col {
-        width: 90px;
-    }
+/* ===================== VIDEO PLACEHOLDER ===================== */
+.video-section {
+    padding: 0 0 var(--section-gap);
+    text-align: center;
+}
+.video-placeholder {
+    background: var(--sage-50);
+    border: 2px dashed var(--sage-300);
+    border-radius: 16px;
+    padding: 80px 40px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.video-placeholder .icon { font-size: 48px; margin-bottom: 16px; color: var(--sage-400); }
+.video-placeholder p { color: var(--text-muted); font-size: 16px; }
 
-    .stages-table tr.image-row td img {
-        max-height: 140px;
-    }
+/* ===================== ADDITIONAL PRODUCTS ===================== */
+.products-section {
+    padding: 0 0 var(--section-gap);
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    border: 1px solid var(--sage-200);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.product-card:hover {
+    border-color: var(--green-400);
+    transform: translateY(-2px);
+}
+.product-card.featured {
+    border: 2px solid var(--green-500);
+    background: var(--green-50);
+}
+.product-card .badge {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--green-600);
+    background: var(--green-100);
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.product-card .badge.soon {
+    color: var(--sage-500);
+    background: var(--sage-200);
+}
+.product-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 6px;
+}
+.product-card .price {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--green-700);
+    margin-bottom: 12px;
+}
+.product-card .price.coming { color: var(--sage-400); font-size: 15px; font-weight: 400; }
+.product-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
-@media (max-width: 540px) {
-    body {
-        padding: 16px;
-    }
-
-    /* Switch to vertical card layout on mobile */
-    .stages-table {
-        display: none;
-    }
-
-    .mobile-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .mobile-card {
-        background: #f6f7f5;
-        border-radius: 10px;
-        padding: 14px;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-    }
-
-    .mobile-card img {
-        width: 70px;
-        height: auto;
-        flex-shrink: 0;
-    }
-
-    .mobile-card .info {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .mobile-card .info .stage-name {
-        font-weight: 600;
-        font-size: 14px;
-        color: #4a4f45;
-    }
-
-    .mobile-card .info .bbch-code {
-        color: #9da39a;
-        font-size: 12px;
-    }
-
-    .mobile-card .info .product-hint {
-        color: #c8cec0;
-        font-size: 11px;
-        font-style: italic;
-        margin-top: 4px;
-    }
+/* ===================== ABOUT / SOCIAL PROOF ===================== */
+.about-section {
+    padding: 0 0 var(--section-gap);
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+.about-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 16px;
+}
+.about-content p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+.about-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.highlight-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+.highlight-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--green-100);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+.highlight-item p {
+    font-size: 14px;
+    margin: 0;
+}
+.highlight-item strong {
+    color: var(--green-800);
 }
 
-@media (min-width: 541px) {
-    .mobile-cards {
-        display: none;
-    }
+/* ===================== CTA ===================== */
+.cta-section {
+    padding: 80px 0;
+    background: var(--green-900);
+    color: var(--white);
+    text-align: center;
+}
+.cta-section h2 {
+    font-size: clamp(24px, 3.5vw, 40px);
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+.cta-section h2 strong { font-weight: 600; }
+.cta-section p {
+    font-size: 17px;
+    color: var(--green-300);
+    margin-bottom: 32px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-price {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+.cta-price-note {
+    font-size: 14px;
+    color: var(--green-400);
+    margin-bottom: 32px;
+}
+.btn-cta {
+    display: inline-block;
+    background: var(--green-500);
+    color: var(--white);
+    padding: 18px 48px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+    min-height: 44px;
+}
+.btn-cta:hover {
+    background: var(--green-400);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+/* ===================== NOTE SECTION ===================== */
+.note-section {
+    padding: 60px 0;
+    background: var(--sage-50);
+}
+.note-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.note-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 16px;
+}
+.note-content p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+.note-content a {
+    color: var(--green-600);
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--sage-200);
+    text-align: center;
+}
+.site-footer p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+.site-footer a { color: var(--green-600); }
+
+/* ===================== LICENSE SECTION ===================== */
+.license-section {
+    padding: 0 0 60px;
+    text-align: center;
+}
+.license-section h3 {
+    font-size: 18px;
+    color: var(--green-800);
+    margin-bottom: 12px;
+}
+.license-section p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+    .container { padding: 0 24px; }
+    .species-list { columns: 2; }
+    .about-content { grid-template-columns: 1fr; gap: 32px; }
+    .hero { padding: 60px 0 40px; }
+    .hero-stats { gap: 32px; }
+}
+
+@media (max-width: 600px) {
+    .container { padding: 0 16px; }
+    .species-list { columns: 1; }
+    .hero-stats { gap: 24px; }
+    .demo-table-wrap { padding: 16px; border-radius: 8px; }
+    .site-nav { gap: 16px; }
+    .site-nav a { font-size: 13px; }
+    :root { --section-gap: 64px; }
 }
 
 </style>
@@ -206,162 +592,433 @@ body {
 
 <body>
 
-<div class="header">
-    <h1>Pea (Pisum sativum)</h1>
-    <div class="right-title">Botanical Growth Stages</div>
-</div>
+<!-- ==================== HEADER ==================== -->
+<header class="site-header">
+    <div class="container">
+        <div class="site-logo">Crop Stages <span>by Ilia Kalinin</span></div>
+        <nav class="site-nav">
+            <a href="#use-cases">Use Cases</a>
+            <a href="#species">All Crops</a>
+            <a href="#products">Products</a>
+            <a href="all-crops.html">View All Tables</a>
+        </nav>
+    </div>
+</header>
 
-<!-- ===== DESKTOP TABLE ===== -->
-<table class="stages-table">
-    <colgroup>
-        <col class="label-col">
-        <col><col><col><col><col><col><col><col><col><col>
-    </colgroup>
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-label">Professional Agricultural Illustrations</div>
+        <h1>
+            <strong>BBCH Growth Stage Tables</strong><br>
+            Ready to Use
+        </h1>
+        <p class="hero-sub">
+            Professional photorealistic illustrations for 93 crops — 10 growth stages each.
+            Built for fertilizer marketing, precision agriculture, and agronomic training.
+        </p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="num">93</div>
+                <div class="label">Crops</div>
+            </div>
+            <div class="hero-stat">
+                <div class="num">930</div>
+                <div class="label">Illustrations</div>
+            </div>
+            <div class="hero-stat">
+                <div class="num">10</div>
+                <div class="label">BBCH Stages Each</div>
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <a href="all-crops.html" class="btn-primary">View All 93 Crop Tables</a>
+            <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-secondary" target="_blank" rel="noopener">Buy for $490</a>
+        </div>
+    </div>
+</section>
 
-    <!-- Row 1: Images -->
-    <tr class="image-row">
-        <td></td>
-        <td><img src="Pea_2/Pea_2_stage_1.png" alt="Семя"></td>
-        <td><img src="Pea_2/Pea_2_stage_2.png" alt="Прорастание"></td>
-        <td><img src="Pea_2/Pea_2_stage_3.png" alt="Всходы"></td>
-        <td><img src="Pea_2/Pea_2_stage_4.png" alt="Развитие листьев"></td>
-        <td><img src="Pea_2/Pea_2_stage_5.png" alt="Рост побегов"></td>
-        <td><img src="Pea_2/Pea_2_stage_6.png" alt="Бутонизация"></td>
-        <td><img src="Pea_2/Pea_2_stage_7.png" alt="Цветение"></td>
-        <td><img src="Pea_2/Pea_2_stage_8.png" alt="Образование бобов"></td>
-        <td><img src="Pea_2/Pea_2_stage_9.png" alt="Созревание"></td>
-        <td><img src="Pea_2/Pea_2_stage_10.png" alt="Отмирание"></td>
-    </tr>
+<!-- ==================== DEMO TABLE ==================== -->
+<section class="demo-section" id="demo">
+    <div class="container">
+        <div class="section-label">Preview</div>
+        <h2 class="section-title">How each table <strong>looks</strong></h2>
+        <p class="section-desc">
+            Every crop comes as a self-contained HTML table with responsive design, BBCH codes, stage descriptions, and a placeholder row for your products.
+        </p>
 
-    <!-- Row 2: BBCH stages -->
-    <tr class="data-row">
-        <td class="label">Стадия BBCH</td>
-        <td class="bbch">00–09</td>
-        <td class="bbch">10–19</td>
-        <td class="bbch">20–29</td>
-        <td class="bbch">30–39</td>
-        <td class="bbch">40–49</td>
-        <td class="bbch">51–59</td>
-        <td class="bbch">60–69</td>
-        <td class="bbch">70–79</td>
-        <td class="bbch">80–89</td>
-        <td class="bbch">90–99</td>
-    </tr>
+        <div class="demo-table-wrap">
+            <table class="stages-table">
+                <colgroup>
+                    <col class="label-col">
+                    <col><col><col><col><col><col><col><col><col><col>
+                </colgroup>
+                <tr class="image-row">
+                    <td></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_1.png" alt="Wheat Stage 1 — Seed"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_2.png" alt="Wheat Stage 2 — Seedling"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_3.png" alt="Wheat Stage 3 — Tillering"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_4.png" alt="Wheat Stage 4 — Stem elongation"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_5.png" alt="Wheat Stage 5 — Booting"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_6.png" alt="Wheat Stage 6 — Heading"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_7.png" alt="Wheat Stage 7 — Flowering"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_8.png" alt="Wheat Stage 8 — Grain filling"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_9.png" alt="Wheat Stage 9 — Grain ripening"></td>
+                    <td><img src="assets/images/crops/wheat/wheat_stage_10.png" alt="Wheat Stage 10 — Senescence"></td>
+                </tr>
+                <tr class="data-row">
+                    <td class="label">BBCH Stage</td>
+                    <td class="bbch">00–09</td>
+                    <td class="bbch">10–19</td>
+                    <td class="bbch">20–29</td>
+                    <td class="bbch">30–39</td>
+                    <td class="bbch">40–49</td>
+                    <td class="bbch">51–59</td>
+                    <td class="bbch">60–69</td>
+                    <td class="bbch">70–79</td>
+                    <td class="bbch">80–89</td>
+                    <td class="bbch">90–99</td>
+                </tr>
+                <tr class="data-row">
+                    <td class="label">Description</td>
+                    <td>Dry seed, imbibition, radicle emergence</td>
+                    <td>Coleoptile emergence, first leaves unfolding</td>
+                    <td>Tiller formation, side shoots develop</td>
+                    <td>Stem elongation, nodes visible</td>
+                    <td>Flag leaf sheath swelling, booting</td>
+                    <td>Head emergence from flag leaf sheath</td>
+                    <td>Anthesis, pollen release</td>
+                    <td>Grain filling, milk to dough stage</td>
+                    <td>Grain ripening, hard dough to maturity</td>
+                    <td>Plant drying, harvest ready</td>
+                </tr>
+                <tr class="data-row footer-row">
+                    <td class="label">Your Product</td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                    <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
 
-    <!-- Row 3: Stage descriptions -->
-    <tr class="data-row">
-        <td class="label">Описание стадии</td>
-        <td>Сухое семя, набухание</td>
-        <td>Прорастание, выход корешка</td>
-        <td>Всходы, раскрытие семядолей</td>
-        <td>Развитие листьев и усиков</td>
-        <td>Удлинение стебля, рост побегов</td>
-        <td>Бутонизация, появление соцветий</td>
-        <td>Цветение</td>
-        <td>Образование и рост бобов</td>
-        <td>Созревание семян, пожелтение бобов</td>
-        <td>Усыхание растения</td>
-    </tr>
+<!-- ==================== USE CASES ==================== -->
+<section class="use-cases" id="use-cases">
+    <div class="container">
+        <div class="section-label">Who is this for</div>
+        <h2 class="section-title">Built for <strong>agriculture professionals</strong></h2>
+        <p class="section-desc" style="margin-bottom: 40px;">
+            Save weeks of design work. Get professional illustrations ready for your marketing materials, apps, and training.
+        </p>
+        <div class="use-cases-grid">
+            <div class="use-case-card">
+                <div class="use-case-icon">🧪</div>
+                <h3>Fertilizer Marketing Materials</h3>
+                <p>Create clear application guides for farmers. Show exactly when to apply your products with visual growth stage references.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">📱</div>
+                <h3>Precision Agriculture Apps</h3>
+                <p>Integrate visual growth references into your AgTech applications. Help farmers identify crop stages in the field.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">🎓</div>
+                <h3>Agronomic Training</h3>
+                <p>Teach BBCH stages with professional illustrations. Perfect for university courses, workshops, and field guides.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">🔍</div>
+                <h3>Field Monitoring Tools</h3>
+                <p>Help scouting teams identify crop stages visually. Build monitoring dashboards with consistent visual references.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Row 4: Your product -->
-    <tr class="data-row footer-row">
-        <td class="label">Ваш препарат</td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-        <td><span class="placeholder">Добавьте название и&nbsp;дозировку препарата</span></td>
-    </tr>
-</table>
+<!-- ==================== SPECIES LIST ==================== -->
+<section class="species-section" id="species">
+    <div class="container">
+        <div class="section-label">93 Crops Included</div>
+        <h2 class="section-title">Complete <strong>species coverage</strong></h2>
+        <p class="section-desc" style="margin-bottom: 40px;">
+            Each crop includes 10 professional BBCH growth stage illustrations with Latin names.
+        </p>
+        <div class="species-list">
+            <a href="crops/alfalfa.html">Alfalfa <span class="latin">Medicago sativa</span></a>
+            <a href="crops/artichoke.html">Artichoke <span class="latin">Cynara cardunculus</span></a>
+            <a href="crops/arugula.html">Arugula <span class="latin">Eruca vesicaria</span></a>
+            <a href="crops/asparagus.html">Asparagus <span class="latin">Asparagus officinalis</span></a>
+            <a href="crops/banana-musaceae.html">Banana <span class="latin">Musa acuminata</span></a>
+            <a href="crops/barley.html">Barley <span class="latin">Hordeum vulgare</span></a>
+            <a href="crops/bean.html">Bean <span class="latin">Phaseolus vulgaris</span></a>
+            <a href="crops/bean-2.html">Bean (v2) <span class="latin">Phaseolus vulgaris</span></a>
+            <a href="crops/bok-choy.html">Bok Choy <span class="latin">Brassica rapa subsp. chinensis</span></a>
+            <a href="crops/broccoli.html">Broccoli <span class="latin">Brassica oleracea var. italica</span></a>
+            <a href="crops/brussels-sprouts.html">Brussels Sprouts <span class="latin">Brassica oleracea var. gemmifera</span></a>
+            <a href="crops/buckwheat.html">Buckwheat <span class="latin">Fagopyrum esculentum</span></a>
+            <a href="crops/carrot.html">Carrot <span class="latin">Daucus carota</span></a>
+            <a href="crops/cauliflower.html">Cauliflower <span class="latin">Brassica oleracea var. botrytis</span></a>
+            <a href="crops/cayenne-pepper.html">Cayenne Pepper <span class="latin">Capsicum annuum</span></a>
+            <a href="crops/celery.html">Celery <span class="latin">Apium graveolens</span></a>
+            <a href="crops/chickpea-2.html">Chickpea <span class="latin">Cicer arietinum</span></a>
+            <a href="crops/chicory.html">Chicory <span class="latin">Cichorium intybus</span></a>
+            <a href="crops/chicory-2.html">Chicory (v2) <span class="latin">Cichorium intybus</span></a>
+            <a href="crops/clover.html">Clover <span class="latin">Trifolium pratense</span></a>
+            <a href="crops/clover-2.html">Clover (v2) <span class="latin">Trifolium pratense</span></a>
+            <a href="crops/common-vetch.html">Common Vetch <span class="latin">Vicia sativa</span></a>
+            <a href="crops/corn.html">Corn <span class="latin">Zea mays</span></a>
+            <a href="crops/cotton.html">Cotton <span class="latin">Gossypium hirsutum</span></a>
+            <a href="crops/cotton-2.html">Cotton (v2) <span class="latin">Gossypium hirsutum</span></a>
+            <a href="crops/couch-grass.html">Couch Grass <span class="latin">Elymus repens</span></a>
+            <a href="crops/cowpea.html">Cowpea <span class="latin">Vigna unguiculata</span></a>
+            <a href="crops/cucumber.html">Cucumber <span class="latin">Cucumis sativus</span></a>
+            <a href="crops/daikon.html">Daikon <span class="latin">Raphanus sativus var. longipinnatus</span></a>
+            <a href="crops/dill.html">Dill <span class="latin">Anethum graveolens</span></a>
+            <a href="crops/eggplant.html">Eggplant <span class="latin">Solanum melongena</span></a>
+            <a href="crops/fennel.html">Fennel <span class="latin">Foeniculum vulgare</span></a>
+            <a href="crops/flax.html">Flax <span class="latin">Linum usitatissimum</span></a>
+            <a href="crops/flax-2.html">Flax (v2) <span class="latin">Linum usitatissimum</span></a>
+            <a href="crops/garlic.html">Garlic <span class="latin">Allium sativum</span></a>
+            <a href="crops/grape.html">Grape <span class="latin">Vitis vinifera</span></a>
+            <a href="crops/grape-2.html">Grape (v2) <span class="latin">Vitis vinifera</span></a>
+            <a href="crops/grape-3.html">Grape (v3) <span class="latin">Vitis vinifera</span></a>
+            <a href="crops/grape-4.html">Grape (v4) <span class="latin">Vitis vinifera</span></a>
+            <a href="crops/hemp.html">Hemp <span class="latin">Cannabis sativa</span></a>
+            <a href="crops/hemp-2.html">Hemp (v2) <span class="latin">Cannabis sativa</span></a>
+            <a href="crops/hops.html">Hops <span class="latin">Humulus lupulus</span></a>
+            <a href="crops/kale.html">Kale <span class="latin">Brassica oleracea var. sabellica</span></a>
+            <a href="crops/kohlrabi.html">Kohlrabi <span class="latin">Brassica oleracea var. gongylodes</span></a>
+            <a href="crops/leek.html">Leek <span class="latin">Allium ampeloprasum</span></a>
+            <a href="crops/lentil.html">Lentil <span class="latin">Lens culinaris</span></a>
+            <a href="crops/lettuce.html">Lettuce <span class="latin">Lactuca sativa</span></a>
+            <a href="crops/melon.html">Melon <span class="latin">Cucumis melo</span></a>
+            <a href="crops/oat.html">Oat <span class="latin">Avena sativa</span></a>
+            <a href="crops/oilseed-radish.html">Oilseed Radish <span class="latin">Raphanus sativus var. oleiformis</span></a>
+            <a href="crops/okra.html">Okra <span class="latin">Abelmoschus esculentus</span></a>
+            <a href="crops/onion.html">Onion <span class="latin">Allium cepa</span></a>
+            <a href="crops/parsnip.html">Parsnip <span class="latin">Pastinaca sativa</span></a>
+            <a href="crops/pea.html">Pea <span class="latin">Pisum sativum</span></a>
+            <a href="crops/pea-2.html">Pea (v2) <span class="latin">Pisum sativum</span></a>
+            <a href="crops/peanut.html">Peanut <span class="latin">Arachis hypogaea</span></a>
+            <a href="crops/peanut-2.html">Peanut (v2) <span class="latin">Arachis hypogaea</span></a>
+            <a href="crops/pepper.html">Pepper <span class="latin">Capsicum annuum</span></a>
+            <a href="crops/pepper-2.html">Pepper (v2) <span class="latin">Capsicum annuum</span></a>
+            <a href="crops/perennial-ryegrass.html">Perennial Ryegrass <span class="latin">Lolium perenne</span></a>
+            <a href="crops/perennial-ryegrass-2.html">Perennial Ryegrass (v2) <span class="latin">Lolium perenne</span></a>
+            <a href="crops/pineapple.html">Pineapple <span class="latin">Ananas comosus</span></a>
+            <a href="crops/potato.html">Potato <span class="latin">Solanum tuberosum</span></a>
+            <a href="crops/potato-2.html">Potato (v2) <span class="latin">Solanum tuberosum</span></a>
+            <a href="crops/pumpkin.html">Pumpkin <span class="latin">Cucurbita maxima</span></a>
+            <a href="crops/quinoa.html">Quinoa <span class="latin">Chenopodium quinoa</span></a>
+            <a href="crops/radish.html">Radish <span class="latin">Raphanus sativus</span></a>
+            <a href="crops/rapeseed.html">Rapeseed <span class="latin">Brassica napus</span></a>
+            <a href="crops/red-beet.html">Red Beet <span class="latin">Beta vulgaris</span></a>
+            <a href="crops/red-cabbage.html">Red Cabbage <span class="latin">Brassica oleracea var. capitata f. rubra</span></a>
+            <a href="crops/rice.html">Rice <span class="latin">Oryza sativa</span></a>
+            <a href="crops/rice-2.html">Rice (v2) <span class="latin">Oryza sativa</span></a>
+            <a href="crops/rutabaga.html">Rutabaga <span class="latin">Brassica napus var. napobrassica</span></a>
+            <a href="crops/sesame.html">Sesame <span class="latin">Sesamum indicum</span></a>
+            <a href="crops/sorghum.html">Sorghum <span class="latin">Sorghum bicolor</span></a>
+            <a href="crops/soybean.html">Soybean <span class="latin">Glycine max</span></a>
+            <a href="crops/soybean-2.html">Soybean (v2) <span class="latin">Glycine max</span></a>
+            <a href="crops/soybean-3.html">Soybean (v3) <span class="latin">Glycine max</span></a>
+            <a href="crops/spinach.html">Spinach <span class="latin">Spinacia oleracea</span></a>
+            <a href="crops/strawberry.html">Strawberry <span class="latin">Fragaria × ananassa</span></a>
+            <a href="crops/sugar-beet.html">Sugar Beet <span class="latin">Beta vulgaris subsp. vulgaris</span></a>
+            <a href="crops/sugar-beet-2.html">Sugar Beet (v2) <span class="latin">Beta vulgaris subsp. vulgaris</span></a>
+            <a href="crops/sugarcane.html">Sugarcane <span class="latin">Saccharum officinarum</span></a>
+            <a href="crops/sugarcane-2.html">Sugarcane (v2) <span class="latin">Saccharum officinarum</span></a>
+            <a href="crops/sunflower.html">Sunflower <span class="latin">Helianthus annuus</span></a>
+            <a href="crops/sweet-potato.html">Sweet Potato <span class="latin">Ipomoea batatas</span></a>
+            <a href="crops/tomato.html">Tomato <span class="latin">Solanum lycopersicum</span></a>
+            <a href="crops/tomato-2.html">Tomato (v2) <span class="latin">Solanum lycopersicum</span></a>
+            <a href="crops/turnip.html">Turnip <span class="latin">Brassica rapa</span></a>
+            <a href="crops/watermelon.html">Watermelon <span class="latin">Citrullus lanatus</span></a>
+            <a href="crops/wheat.html">Wheat <span class="latin">Triticum aestivum</span></a>
+            <a href="crops/white-cabbage.html">White Cabbage <span class="latin">Brassica oleracea var. capitata</span></a>
+            <a href="crops/white-mustard.html">White Mustard <span class="latin">Sinapis alba</span></a>
+            <a href="crops/zucchini.html">Zucchini <span class="latin">Cucurbita pepo</span></a>
+        </div>
 
-<!-- ===== MOBILE CARDS ===== -->
-<div class="mobile-cards">
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_1.png" alt="Семя">
-        <div class="info">
-            <div class="stage-name">Сухое семя, набухание</div>
-            <div class="bbch-code">BBCH 00–09</div>
-            <div class="product-hint">Добавьте препарат</div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="all-crops.html" class="btn-primary">View All 93 Crop Tables →</a>
         </div>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_2.png" alt="Прорастание">
-        <div class="info">
-            <div class="stage-name">Прорастание, выход корешка</div>
-            <div class="bbch-code">BBCH 10–19</div>
-            <div class="product-hint">Добавьте препарат</div>
+</section>
+
+<!-- ==================== VIDEO ==================== -->
+<section class="video-section" id="video">
+    <div class="container">
+        <div class="section-label">Overview</div>
+        <h2 class="section-title" style="margin-bottom: 32px;">See the tables <strong>in action</strong></h2>
+        <div class="video-placeholder">
+            <div class="icon">▶</div>
+            <p>Video walkthrough — coming soon</p>
         </div>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_3.png" alt="Всходы">
-        <div class="info">
-            <div class="stage-name">Всходы, раскрытие семядолей</div>
-            <div class="bbch-code">BBCH 20–29</div>
-            <div class="product-hint">Добавьте препарат</div>
+</section>
+
+<!-- ==================== ADDITIONAL PRODUCTS ==================== -->
+<section class="products-section" id="products">
+    <div class="container">
+        <div class="section-label">Products</div>
+        <h2 class="section-title">More <strong>visual assets</strong> for agriculture</h2>
+        <p class="section-desc" style="margin-bottom: 40px;">
+            Professional illustration sets designed specifically for the agro industry.
+        </p>
+        <div class="products-grid">
+            <div class="product-card featured">
+                <div class="badge">Main product</div>
+                <h3>Growth Stages Tables</h3>
+                <div class="price">$490</div>
+                <p>93 crops × 10 stages = 930 illustrations. HTML tables, organized file structure, ready to use.</p>
+                <br>
+                <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-primary" target="_blank" rel="noopener" style="font-size:14px; padding: 10px 24px;">Buy on Gumroad</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">Available</div>
+                <h3>Growth Stages — Photorealistic</h3>
+                <div class="price">$49</div>
+                <p>Photorealistic crop growth stage illustrations. Individual PNG files.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">Available</div>
+                <h3>Growth Stages — Vector</h3>
+                <div class="price">$49</div>
+                <p>Clean vector illustrations of crop growth stages. Scalable SVG format.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">Available</div>
+                <h3>Growth Stages — B&W Outlines</h3>
+                <div class="price">$49</div>
+                <p>Black and white contour illustrations. Perfect for print and educational materials.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">Available</div>
+                <h3>Growth Stages — Flowers</h3>
+                <div class="price">$17</div>
+                <p>Flower growth stage illustrations in the same professional style.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge">Available</div>
+                <h3>Agriculture Icons</h3>
+                <div class="price">$17</div>
+                <p>Icon set for agricultural applications, presentations, and marketing materials.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge soon">Coming soon</div>
+                <h3>Planting Calendars</h3>
+                <div class="price coming">Coming soon</div>
+                <p>Visual planting calendar templates for different climate zones.</p>
+            </div>
+            <div class="product-card">
+                <div class="badge soon">Coming soon</div>
+                <h3>Companion Planting Charts</h3>
+                <div class="price coming">Coming soon</div>
+                <p>Visual companion planting reference charts.</p>
+            </div>
         </div>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_4.png" alt="Развитие листьев">
-        <div class="info">
-            <div class="stage-name">Развитие листьев и усиков</div>
-            <div class="bbch-code">BBCH 30–39</div>
-            <div class="product-hint">Добавьте препарат</div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-label">About</div>
+        <h2 class="section-title" style="margin-bottom: 40px;">Created by a <strong>professional illustrator</strong></h2>
+        <div class="about-content">
+            <div>
+                <h3>Ilia Kalinin</h3>
+                <p>
+                    Professional botanical illustrator with 4,000+ images in online stores.
+                    Developed visuals for leading European agro-companies in collaboration with botanists.
+                </p>
+                <p>
+                    Every illustration is crafted with botanical accuracy in mind,
+                    following the BBCH phenological scale to ensure consistency across all crops.
+                </p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <div class="highlight-icon">🖼</div>
+                    <p><strong>4,000+ images</strong> published across stock platforms and direct clients</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">🌾</div>
+                    <p><strong>Agriculture-focused</strong> — built specifically for the agro industry, not generic stock</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">🤝</div>
+                    <p><strong>Industry experience</strong> — working with European fertilizer and crop protection companies</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">🔬</div>
+                    <p><strong>Botanist-reviewed</strong> — developed in collaboration with agronomists</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_5.png" alt="Рост побегов">
-        <div class="info">
-            <div class="stage-name">Удлинение стебля, рост побегов</div>
-            <div class="bbch-code">BBCH 40–49</div>
-            <div class="product-hint">Добавьте препарат</div>
+</section>
+
+<!-- ==================== NOTE SECTION ==================== -->
+<section class="note-section">
+    <div class="container">
+        <div class="note-content">
+            <h3>A note on accuracy</h3>
+            <p>
+                These are general approximate photorealistic illustrations following the BBCH scale.
+                With 93 crops and 930 stages, some variations are inevitable.
+                This is not a precise botanical encyclopedia — it's a practical visual tool
+                for marketing and educational use. For most tasks, this level of detail is more than sufficient.
+            </p>
+            <p>
+                If you need just a few crops, <a href="mailto:kalinin.design@gmail.com">contact me directly</a>.
+                I also welcome feedback on corrections — write to me and we'll improve this system together.
+            </p>
         </div>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_6.png" alt="Бутонизация">
-        <div class="info">
-            <div class="stage-name">Бутонизация, появление соцветий</div>
-            <div class="bbch-code">BBCH 51–59</div>
-            <div class="product-hint">Добавьте препарат</div>
-        </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Get all <strong>93 crop tables</strong> today</h2>
+        <p>
+            930 professional illustrations. Ready-to-use HTML tables. One purchase, unlimited use.
+        </p>
+        <div class="cta-price">$490</div>
+        <div class="cta-price-note">Save 85% vs. custom design work ($3,200+)</div>
+        <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-cta" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_7.png" alt="Цветение">
-        <div class="info">
-            <div class="stage-name">Цветение</div>
-            <div class="bbch-code">BBCH 60–69</div>
-            <div class="product-hint">Добавьте препарат</div>
-        </div>
+</section>
+
+<!-- ==================== LICENSE ==================== -->
+<section class="license-section" style="padding-top: 60px;">
+    <div class="container">
+        <h3>License</h3>
+        <p>
+            All illustrations are licensed for commercial use.
+            Use them in your marketing materials, applications, presentations, and websites.
+            Contact <a href="mailto:kalinin.design@gmail.com">kalinin.design@gmail.com</a> for custom licensing inquiries.
+        </p>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_8.png" alt="Образование бобов">
-        <div class="info">
-            <div class="stage-name">Образование и рост бобов</div>
-            <div class="bbch-code">BBCH 70–79</div>
-            <div class="product-hint">Добавьте препарат</div>
-        </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+    <div class="container">
+        <p>Crop Stages by Ilia Kalinin</p>
+        <p><a href="mailto:kalinin.design@gmail.com">kalinin.design@gmail.com</a> · <a href="https://iliadesign.gumroad.com" target="_blank" rel="noopener">Gumroad Store</a></p>
     </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_9.png" alt="Созревание">
-        <div class="info">
-            <div class="stage-name">Созревание семян, пожелтение бобов</div>
-            <div class="bbch-code">BBCH 80–89</div>
-            <div class="product-hint">Добавьте препарат</div>
-        </div>
-    </div>
-    <div class="mobile-card">
-        <img src="Pea_2/Pea_2_stage_10.png" alt="Отмирание">
-        <div class="info">
-            <div class="stage-name">Усыхание растения</div>
-            <div class="bbch-code">BBCH 90–99</div>
-            <div class="product-hint">Добавьте препарат</div>
-        </div>
-    </div>
-</div>
+</footer>
 
 </body>
 </html>
