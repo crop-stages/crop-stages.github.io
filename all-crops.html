@@ -84,39 +84,32 @@ a:hover { text-decoration: underline; }
 }
 .back-link:hover { color: var(--green-600); text-decoration: none; }
 
-/* ===================== PAGE HERO ===================== */
+/* ===================== PAGE HERO (with bg.jpg) ===================== */
 .page-hero {
-    padding: 56px 0 40px;
+    padding: 56px 0 48px;
     text-align: center;
+    background: url('assets/images/bg.jpg') center / cover no-repeat;
+    color: var(--white);
 }
 .page-hero h1 {
     font-size: clamp(26px, 4vw, 44px);
     font-weight: 700;
-    color: var(--green-900);
+    color: var(--white);
     margin-bottom: 12px;
 }
 .page-hero p {
     font-size: 16px;
-    color: var(--text-secondary);
+    color: rgba(255,255,255,0.8);
     max-width: 580px;
     margin: 0 auto;
 }
-
-/* ===================== BUY BAR ===================== */
-.buy-bar {
-    text-align: center;
-    padding: 28px 0;
-    background: url('assets/images/bg.jpg') center / cover no-repeat;
-    color: var(--white);
-    margin: 32px 0 48px;
-    border-radius: 10px;
-}
-.buy-bar .savings {
+.page-hero .savings {
     font-size: 13px;
-    color: var(--green-400);
+    color: rgba(255,255,255,0.65);
+    margin-top: 24px;
     margin-bottom: 16px;
 }
-.btn-buy {
+.page-hero .btn-buy {
     display: inline-block;
     background: var(--green-500);
     color: var(--white);
@@ -127,7 +120,7 @@ a:hover { text-decoration: underline; }
     transition: background 0.2s;
     min-height: 44px;
 }
-.btn-buy:hover {
+.page-hero .btn-buy:hover {
     background: var(--green-400);
     text-decoration: none;
 }
@@ -323,8 +316,23 @@ a:hover { text-decoration: underline; }
 .bottom-cta h2 strong { font-weight: 600; }
 .bottom-cta p {
     font-size: 15px;
-    color: var(--green-300);
+    color: rgba(255,255,255,0.7);
     margin-bottom: 24px;
+}
+.bottom-cta .btn-buy {
+    display: inline-block;
+    background: var(--green-500);
+    color: var(--white);
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s;
+    min-height: 44px;
+}
+.bottom-cta .btn-buy:hover {
+    background: var(--green-400);
+    text-decoration: none;
 }
 
 /* ===================== FOOTER ===================== */
@@ -389,15 +397,10 @@ a:hover { text-decoration: underline; }
     <div class="container">
         <h1>All 93 Crop Tables</h1>
         <p>Browse every crop growth stage table included in the package. 930 professional BBCH illustrations.</p>
-    </div>
-</section>
-
-<div class="container">
-    <div class="buy-bar">
         <div class="savings">Save 85% vs. custom design work ($3,200+)</div>
         <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
     </div>
-</div>
+</section>
 
 <section class="toc-section">
     <div class="container">
