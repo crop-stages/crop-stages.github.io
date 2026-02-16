@@ -106,15 +106,10 @@ a:hover { text-decoration: underline; }
 .buy-bar {
     text-align: center;
     padding: 28px 0;
-    background: var(--green-900);
+    background: url('assets/images/bg.jpg') center / cover no-repeat;
     color: var(--white);
     margin: 32px 0 48px;
     border-radius: 10px;
-}
-.buy-bar .price {
-    font-size: clamp(28px, 3.5vw, 42px);
-    font-weight: 700;
-    margin-bottom: 4px;
 }
 .buy-bar .savings {
     font-size: 13px;
@@ -261,11 +256,63 @@ a:hover { text-decoration: underline; }
     font-size: 13px;
 }
 
+/* Mobile cards (loaded from crop files) */
+.crop-table-container .mobile-cards {
+    display: none;
+}
+
+@media (max-width: 540px) {
+    .crop-table-container .stages-table {
+        display: none;
+    }
+    .crop-table-container .mobile-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .crop-table-container {
+        overflow-x: visible;
+        min-height: auto;
+    }
+    .mobile-card {
+        background: var(--sage-50);
+        border-radius: 10px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .mobile-card img {
+        width: 65px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .mobile-card .info {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .mobile-card .info .stage-name {
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--text-primary);
+    }
+    .mobile-card .info .bbch-code {
+        color: var(--text-muted);
+        font-size: 11px;
+    }
+    .mobile-card .info .product-hint {
+        color: var(--sage-300);
+        font-size: 10px;
+        font-style: italic;
+        margin-top: 3px;
+    }
+}
+
 /* ===================== BOTTOM CTA ===================== */
 .bottom-cta {
     text-align: center;
     padding: 64px 0;
-    background: var(--green-900);
+    background: url('assets/images/bg.jpg') center / cover no-repeat;
     color: var(--white);
 }
 .bottom-cta h2 {
@@ -347,7 +394,6 @@ a:hover { text-decoration: underline; }
 
 <div class="container">
     <div class="buy-bar">
-        <div class="price">$490</div>
         <div class="savings">Save 85% vs. custom design work ($3,200+)</div>
         <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
     </div>
@@ -516,8 +562,9 @@ a:hover { text-decoration: underline; }
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var table = doc.querySelector('table.stages-table');
+        var mobileCards = doc.querySelector('.mobile-cards');
         if (!table) return '<p style="color:#999;">Table not found in source file.</p>';
-        return table.outerHTML;
+        return table.outerHTML + (mobileCards ? mobileCards.outerHTML : '');
     }
 
     var containers = document.querySelectorAll('.crop-table-container');

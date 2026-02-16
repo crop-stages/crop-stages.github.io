@@ -268,6 +268,62 @@ a:hover { text-decoration: underline; }
     font-size: 14px;
 }
 
+/* Mobile cards (loaded from crop files) */
+.carousel-table-area .mobile-cards,
+.crop-table-container .mobile-cards {
+    display: none;
+}
+
+@media (max-width: 540px) {
+    .carousel-table-area .stages-table,
+    .crop-table-container .stages-table {
+        display: none;
+    }
+    .carousel-table-area .mobile-cards,
+    .crop-table-container .mobile-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .carousel-table-area,
+    .crop-table-container {
+        overflow-x: visible;
+        min-height: auto;
+    }
+    .mobile-card {
+        background: var(--sage-50);
+        border-radius: 10px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .mobile-card img {
+        width: 65px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .mobile-card .info {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .mobile-card .info .stage-name {
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--text-primary);
+    }
+    .mobile-card .info .bbch-code {
+        color: var(--text-muted);
+        font-size: 11px;
+    }
+    .mobile-card .info .product-hint {
+        color: var(--sage-300);
+        font-size: 10px;
+        font-style: italic;
+        margin-top: 3px;
+    }
+}
+
 /* ===================== SPECIES LIST ===================== */
 .species-section {
     padding: 0 0 32px;
@@ -887,12 +943,13 @@ a:hover { text-decoration: underline; }
     }
 
     function extractTable(html) {
-        // Parse the fetched HTML and extract the <table class="stages-table"> element
+        // Parse the fetched HTML and extract table + mobile cards
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
         const table = doc.querySelector('table.stages-table');
+        const mobileCards = doc.querySelector('.mobile-cards');
         if (!table) return '<p style="color:#999;">Table not found</p>';
-        return table.outerHTML;
+        return table.outerHTML + (mobileCards ? mobileCards.outerHTML : '');
     }
 
     async function loadCrop(index) {
