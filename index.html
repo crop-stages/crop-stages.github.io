@@ -44,7 +44,7 @@
     --font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
 
     --max-width: 1200px;
-    --section-gap: 80px;
+    --section-gap: 48px;
 }
 
 html { scroll-behavior: smooth; }
@@ -92,7 +92,7 @@ a:hover { text-decoration: underline; }
 
 /* ===================== HERO ===================== */
 .hero {
-    padding: 64px 0 48px;
+    padding: 40px 0 32px;
     text-align: center;
 }
 .hero-label {
@@ -104,14 +104,14 @@ a:hover { text-decoration: underline; }
     background: var(--green-100);
     padding: 5px 14px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 .hero h1 {
     font-size: clamp(30px, 4.5vw, 50px);
     font-weight: 700;
     line-height: 1.15;
     color: var(--green-900);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 .hero-sub {
     font-size: clamp(15px, 1.8vw, 18px);
@@ -171,7 +171,7 @@ a:hover { text-decoration: underline; }
     text-align: center;
     font-size: 14px;
     color: var(--text-muted);
-    margin-top: 12px;
+    margin-top: 8px;
 }
 .carousel-crop-name strong {
     color: var(--text-primary);
@@ -181,7 +181,7 @@ a:hover { text-decoration: underline; }
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 .carousel-dots .dot {
     width: 8px;
@@ -299,14 +299,14 @@ a:hover { text-decoration: underline; }
 
 /* ===================== CTA ===================== */
 .cta-section {
-    padding: 56px 0;
+    padding: 36px 0;
     text-align: center;
 }
 .cta-section h2 {
     font-size: clamp(22px, 3vw, 34px);
     font-weight: 300;
     color: var(--green-900);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 .cta-section h2 strong { font-weight: 600; }
 .btn-cta {
@@ -334,29 +334,17 @@ a:hover { text-decoration: underline; }
 
 /* ===================== VALUE PROPOSITION (dark) ===================== */
 .value-section {
-    padding: 64px 0;
-    background: var(--green-900);
-    background-image: url('assets/images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
+    padding: 48px 0;
+    background: url('assets/images/bg.jpg') center / cover no-repeat;
     color: var(--white);
-    position: relative;
-}
-.value-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(45, 58, 40, 0.88);
 }
 .value-section .container {
     position: relative;
-    z-index: 1;
 }
 .value-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    gap: 48px;
 }
 .value-block h3 {
     font-size: 20px;
@@ -388,7 +376,7 @@ a:hover { text-decoration: underline; }
 }
 .products-section .section-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 .products-grid {
     display: grid;
@@ -465,7 +453,7 @@ a:hover { text-decoration: underline; }
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    gap: 48px;
     align-items: start;
 }
 .about-grid h3 {
@@ -510,7 +498,7 @@ a:hover { text-decoration: underline; }
 
 /* ===================== LICENSE ===================== */
 .license-section {
-    padding: 48px 0;
+    padding: 36px 0;
     text-align: center;
     border-top: 1px solid var(--sage-200);
 }
@@ -568,7 +556,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 600px) {
     .container { padding: 0 16px; }
     .species-list { columns: 2; font-size: 13px; }
-    :root { --section-gap: 56px; }
+    :root { --section-gap: 36px; }
     .carousel-btn.prev { left: 2px; }
     .carousel-btn.next { right: 2px; }
 }
@@ -618,7 +606,7 @@ a:hover { text-decoration: underline; }
 <!-- ==================== SPECIES LIST ==================== -->
 <section class="species-section" id="species">
     <div class="container">
-        <h2 class="section-title" style="text-align:center; margin-bottom: 28px;">Complete <strong>species coverage</strong></h2>
+        <h2 class="section-title" style="text-align:center; margin-bottom: 20px;">Complete <strong>species coverage</strong></h2>
         <div class="species-list">
             <a href="crops/alfalfa.html">Alfalfa</a>
             <a href="crops/artichoke.html">Artichoke</a>
