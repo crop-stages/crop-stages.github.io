@@ -84,32 +84,44 @@ a:hover { text-decoration: underline; }
 }
 .back-link:hover { color: var(--green-600); text-decoration: none; }
 
-/* ===================== PAGE HERO (with bg.jpg) ===================== */
+/* ===================== PAGE HERO ===================== */
 .page-hero {
-    padding: 56px 0 48px;
+    padding: 56px 0 40px;
     text-align: center;
-    background: url('assets/images/bg.jpg') center / cover no-repeat;
-    color: var(--white);
 }
 .page-hero h1 {
     font-size: clamp(26px, 4vw, 44px);
     font-weight: 700;
-    color: var(--white);
+    color: var(--green-900);
     margin-bottom: 12px;
 }
 .page-hero p {
     font-size: 16px;
-    color: rgba(255,255,255,0.8);
+    color: var(--text-secondary);
     max-width: 580px;
     margin: 0 auto;
 }
-.page-hero .savings {
+
+/* ===================== BUY BAR ===================== */
+.buy-bar {
+    text-align: center;
+    padding: 28px 0;
+    background: var(--green-900);
+    color: var(--white);
+    margin: 32px 0 48px;
+    border-radius: 10px;
+}
+.buy-bar .price {
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.buy-bar .savings {
     font-size: 13px;
-    color: rgba(255,255,255,0.65);
-    margin-top: 24px;
+    color: var(--green-400);
     margin-bottom: 16px;
 }
-.page-hero .btn-buy {
+.btn-buy {
     display: inline-block;
     background: var(--green-500);
     color: var(--white);
@@ -120,7 +132,7 @@ a:hover { text-decoration: underline; }
     transition: background 0.2s;
     min-height: 44px;
 }
-.page-hero .btn-buy:hover {
+.btn-buy:hover {
     background: var(--green-400);
     text-decoration: none;
 }
@@ -249,63 +261,11 @@ a:hover { text-decoration: underline; }
     font-size: 13px;
 }
 
-/* Mobile cards (loaded from crop files) */
-.crop-table-container .mobile-cards {
-    display: none;
-}
-
-@media (max-width: 540px) {
-    .crop-table-container .stages-table {
-        display: none;
-    }
-    .crop-table-container .mobile-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .crop-table-container {
-        overflow-x: visible;
-        min-height: auto;
-    }
-    .mobile-card {
-        background: var(--sage-50);
-        border-radius: 10px;
-        padding: 12px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-    .mobile-card img {
-        width: 65px;
-        height: auto;
-        flex-shrink: 0;
-    }
-    .mobile-card .info {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-    .mobile-card .info .stage-name {
-        font-weight: 600;
-        font-size: 13px;
-        color: var(--text-primary);
-    }
-    .mobile-card .info .bbch-code {
-        color: var(--text-muted);
-        font-size: 11px;
-    }
-    .mobile-card .info .product-hint {
-        color: var(--sage-300);
-        font-size: 10px;
-        font-style: italic;
-        margin-top: 3px;
-    }
-}
-
 /* ===================== BOTTOM CTA ===================== */
 .bottom-cta {
     text-align: center;
     padding: 64px 0;
-    background: url('assets/images/bg.jpg') center / cover no-repeat;
+    background: var(--green-900);
     color: var(--white);
 }
 .bottom-cta h2 {
@@ -316,23 +276,8 @@ a:hover { text-decoration: underline; }
 .bottom-cta h2 strong { font-weight: 600; }
 .bottom-cta p {
     font-size: 15px;
-    color: rgba(255,255,255,0.7);
+    color: var(--green-300);
     margin-bottom: 24px;
-}
-.bottom-cta .btn-buy {
-    display: inline-block;
-    background: var(--green-500);
-    color: var(--white);
-    padding: 14px 36px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background 0.2s;
-    min-height: 44px;
-}
-.bottom-cta .btn-buy:hover {
-    background: var(--green-400);
-    text-decoration: none;
 }
 
 /* ===================== FOOTER ===================== */
@@ -397,10 +342,16 @@ a:hover { text-decoration: underline; }
     <div class="container">
         <h1>All 93 Crop Tables</h1>
         <p>Browse every crop growth stage table included in the package. 930 professional BBCH illustrations.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="buy-bar">
+        <div class="price">$490</div>
         <div class="savings">Save 85% vs. custom design work ($3,200+)</div>
         <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
     </div>
-</section>
+</div>
 
 <section class="toc-section">
     <div class="container">
@@ -565,9 +516,8 @@ a:hover { text-decoration: underline; }
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var table = doc.querySelector('table.stages-table');
-        var mobileCards = doc.querySelector('.mobile-cards');
         if (!table) return '<p style="color:#999;">Table not found in source file.</p>';
-        return table.outerHTML + (mobileCards ? mobileCards.outerHTML : '');
+        return table.outerHTML;
     }
 
     var containers = document.querySelectorAll('.crop-table-container');

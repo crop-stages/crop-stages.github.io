@@ -454,8 +454,12 @@ def get_bbch(crop_type):
     return BBCH_STAGES.get(crop_type, BBCH_STAGES["default"])
 
 
-def generate_crop_html(slug, display_name, latin_name, crop_type):
-    """Generate a complete self-contained HTML page for one crop."""
+def generate_crop_html(slug, display_name, latin_name, crop_type, images_base_dir=None):
+    """Generate a complete self-contained HTML page for one crop.
+    
+    If images_base_dir is provided, only stages with existing PNG files
+    will be included. Otherwise all 10 stages are included.
+    """
     bbch = get_bbch(crop_type)
     codes = bbch["codes"]
     names = bbch["names"]
@@ -466,44 +470,62 @@ def generate_crop_html(slug, display_name, latin_name, crop_type):
     ln = html.escape(latin_name)
     slug_e = html.escape(slug)
 
+    # Determine which stages have images
+    if images_base_dir:
+        existing_stages = []
+        for i in range(1, 11):
+            img_path = os.path.join(images_base_dir, slug, f"{slug}_stage_{i}.png")
+            if os.path.isfile(img_path):
+                existing_stages.append(i)
+        if not existing_stages:
+            # Fallback: include all 10 if no images found at all
+            existing_stages = list(range(1, 11))
+    else:
+        existing_stages = list(range(1, 11))
+
+    num_stages = len(existing_stages)
+
     # Build image cells for desktop
     img_cells = []
-    for i in range(1, 11):
+    for i in existing_stages:
         alt = html.escape(alts[i-1])
         img_cells.append(f'        <td><img src="../assets/images/crops/{slug_e}/{slug_e}_stage_{i}.png" alt="{dn} Stage {i} — {alt}"></td>')
     img_row = "\n".join(img_cells)
 
     # Build BBCH code cells
     bbch_cells = []
-    for c in codes:
-        bbch_cells.append(f'        <td class="bbch">{c}</td>')
+    for i in existing_stages:
+        bbch_cells.append(f'        <td class="bbch">{codes[i-1]}</td>')
     bbch_row = "\n".join(bbch_cells)
 
     # Build description cells
     desc_cells = []
-    for d in descriptions:
-        desc_cells.append(f'        <td>{html.escape(d)}</td>')
+    for i in existing_stages:
+        desc_cells.append(f'        <td>{html.escape(descriptions[i-1])}</td>')
     desc_row = "\n".join(desc_cells)
 
     # Build product placeholder cells
     placeholder_cells = []
-    for _ in range(10):
+    for _ in existing_stages:
         placeholder_cells.append('        <td><span class="placeholder">Add product name &amp;&nbsp;dosage</span></td>')
     placeholder_row = "\n".join(placeholder_cells)
 
     # Build mobile cards
     mobile_cards = []
-    for i in range(10):
-        alt = html.escape(alts[i])
+    for i in existing_stages:
+        alt = html.escape(alts[i-1])
         mobile_cards.append(f"""    <div class="mobile-card">
-        <img src="../assets/images/crops/{slug_e}/{slug_e}_stage_{i+1}.png" alt="{dn} Stage {i+1} — {alt}">
+        <img src="../assets/images/crops/{slug_e}/{slug_e}_stage_{i}.png" alt="{dn} Stage {i} — {alt}">
         <div class="info">
-            <div class="stage-name">{html.escape(descriptions[i])}</div>
-            <div class="bbch-code">BBCH {codes[i]}</div>
+            <div class="stage-name">{html.escape(descriptions[i-1])}</div>
+            <div class="bbch-code">BBCH {codes[i-1]}</div>
             <div class="product-hint">Add product</div>
         </div>
     </div>""")
     mobile_html = "\n".join(mobile_cards)
+
+    # Build dynamic colgroup
+    col_tags = "<col>" * num_stages
 
     # Keywords
     name_lower = display_name.lower()
@@ -515,7 +537,7 @@ def generate_crop_html(slug, display_name, latin_name, crop_type):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{dn} Growth Stages (BBCH) | Crop Stages</title>
-<meta name="description" content="Professional BBCH growth stage illustrations for {dn} ({ln}). 10 stages from germination to maturity.">
+<meta name="description" content="Professional BBCH growth stage illustrations for {dn} ({ln}). {num_stages} stages from germination to maturity.">
 <meta name="keywords" content="{html.escape(kw)}">
 <link rel="canonical" href="https://crop-stages.github.io/crops/{slug_e}.html">
 
@@ -727,7 +749,7 @@ body {{
 <table class="stages-table">
     <colgroup>
         <col class="label-col">
-        <col><col><col><col><col><col><col><col><col><col>
+        {col_tags}
     </colgroup>
 
     <tr class="image-row">
@@ -762,19 +784,47 @@ body {{
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Generate crop HTML table pages')
+    parser.add_argument('--images-dir', default=None,
+                        help='Path to images/crops/ directory. If provided, only stages with existing PNGs will be included.')
+    args = parser.parse_args()
+
     # Output directory
     out_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "crops")
     os.makedirs(out_dir, exist_ok=True)
 
     count = 0
+    skipped_stages = {}
     for slug, (display_name, latin_name, crop_type) in sorted(CROPS.items()):
-        page_html = generate_crop_html(slug, display_name, latin_name, crop_type)
+        page_html = generate_crop_html(slug, display_name, latin_name, crop_type, args.images_dir)
+
+        # Count stages for reporting
+        if args.images_dir:
+            existing = []
+            for i in range(1, 11):
+                img_path = os.path.join(args.images_dir, slug, f"{slug}_stage_{i}.png")
+                if os.path.isfile(img_path):
+                    existing.append(i)
+            if len(existing) < 10 and existing:
+                skipped_stages[slug] = len(existing)
+                print(f"  {slug}: {len(existing)} stages (skipped {10 - len(existing)} empty)")
+            elif not existing:
+                skipped_stages[slug] = 0
+                print(f"  ⚠ {slug}: no images found, using all 10 stages")
+
         filepath = os.path.join(out_dir, f"{slug}.html")
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(page_html)
         count += 1
 
-    print(f"Generated {count} crop table pages in {out_dir}/")
+    print(f"\nGenerated {count} crop table pages in {out_dir}/")
+    if skipped_stages:
+        less_than_10 = {k: v for k, v in skipped_stages.items() if 0 < v < 10}
+        if less_than_10:
+            print(f"Crops with fewer than 10 stages: {len(less_than_10)}")
+            for slug, n in sorted(less_than_10.items()):
+                print(f"  {slug}: {n} stages")
     return count
 
 
