@@ -1,2 +1,0 @@
-cmd
-python scripts/generate_tables.py
