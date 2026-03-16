@@ -28,11 +28,11 @@ a:hover{text-decoration:underline}
 .banner-desc{font-size:clamp(13px,1.4vw,15px);line-height:1.6;color:rgba(255,255,255,.88);margin-bottom:14px;max-width:480px}
 .banner-note{font-size:12px;color:rgba(255,255,255,.6);margin-bottom:24px;display:flex;align-items:center;gap:6px}
 .banner-note::before{content:"\2022";color:rgba(255,255,255,.4)}
-.banner-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.btn-buy{display:inline-block;background:#C03030;color:#fff;padding:14px 32px;border-radius:6px;font-size:16px;font-weight:700;text-decoration:none;transition:background .2s;white-space:nowrap}
+.banner-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.btn-buy{display:inline-block;background:#C03030;color:#fff;padding:12px 28px;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s;white-space:nowrap}
 .btn-buy:hover{background:#E24444;text-decoration:none}
-.png-badge{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:13px;line-height:1.4}
-.png-icon-img{width:36px;height:auto;flex-shrink:0}
+.btn-preview{display:inline-block;background:var(--green-600);color:#fff;padding:12px 28px;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s;white-space:nowrap}
+.btn-preview:hover{background:#64A53A;text-decoration:none}
 .banner-visual{position:relative;display:flex;align-items:center;justify-content:center}
 .table-frame{position:relative;max-width:100%}
 .table-frame img{width:100%;height:auto;display:block;border-radius:6px}
@@ -127,7 +127,7 @@ a:hover{text-decoration:underline}
 <div class="banner-note">BBCH stage names are approximate — please verify before use.</div>
 <div class="banner-actions">
 <a href="https://iliadesign.gumroad.com/l/fullset" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables</a>
-<div class="png-badge"><img src="assets/images/png_icon.png" alt="PNG" class="png-icon-img"><div>Individual images<br>of each growth stage<br>are included.</div></div>
+<a href="https://iliadesign.gumroad.com/l/freepreview" class="btn-preview" target="_blank" rel="noopener">Download Preview</a>
 </div></div>
 <div class="banner-visual"><div class="table-frame"><img src="assets/images/table.png" alt="Editable Table in PowerPoint Presentation — Lettuce BBCH growth stages"></div></div>
 </div></section>
@@ -240,7 +240,7 @@ goTo(0);
 /* === Load product cards from Gumroad API === */
 (function(){
 var TOKEN='lOjKsjqYTlwL_ivMcmPCuASnuyabitSHZY76TkvgbOk';
-var SLUGS=['fullset','cereals_grains','leafy','legume','nightshade','root-and-tuber','cucurbits-and-melons','brassicas','oilseed','other','plant-growth-cycles','oipiv','development_fruit_tree','GardenIcons','FlowerGrowth','FarmLineIconsSet'];
+var SLUGS=['fullset','cereals_grains','leafy','legume','nightshade','root-and-tuber','cucurbits-and-melons','brassicas','oilseed','other','freepreview','plant-growth-cycles','oipiv','development_fruit_tree','GardenIcons','FlowerGrowth','FarmLineIconsSet'];
 var grid=document.getElementById('productsGrid');
 
 fetch('https://api.gumroad.com/v2/products?access_token='+TOKEN)

@@ -108,11 +108,11 @@ a:hover { text-decoration: underline; }
     color: var(--white);
 }
 .hero-label {
-    font-size: 13px;
+    font-size: 18px;
     font-style: italic;
-    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+    color: #fff;
     margin-bottom: 10px;
-    letter-spacing: 0.3px;
 }
 .hero h1 {
     font-size: clamp(22px, 3.2vw, 34px);
@@ -131,10 +131,10 @@ a:hover { text-decoration: underline; }
     display: inline-block;
     background: #C03030;
     color: var(--white);
-    padding: 14px 32px;
-    border-radius: 8px;
+    padding: 12px 28px;
+    border-radius: 6px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     transition: background 0.2s;
     min-height: 44px;
 }
@@ -142,24 +142,27 @@ a:hover { text-decoration: underline; }
     background: #E24444;
     text-decoration: none;
 }
+.btn-preview {
+    display: inline-block;
+    background: var(--green-600);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+.btn-preview:hover {
+    background: #64A53A;
+    text-decoration: none;
+}
 .banner-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
-}
-.png-badge {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: rgba(255,255,255,0.85);
-    font-size: 13px;
-    line-height: 1.4;
-}
-.png-icon-img {
-    width: 36px;
-    height: auto;
-    flex-shrink: 0;
+    margin-top: 20px;
 }
 .hero-visual {
     display: flex;
@@ -497,7 +500,7 @@ a:hover { text-decoration: underline; }
             </p>
             <div class="banner-actions">
                 <a href="https://iliadesign.gumroad.com/l/fullset" class="btn-red" target="_blank" rel="noopener">Buy All 93 Tables</a>
-                <div class="png-badge"><img src="assets/images/png_icon.png" alt="PNG" class="png-icon-img"><div>Individual images<br>of each growth stage<br>are included.</div></div>
+                <a href="https://iliadesign.gumroad.com/l/freepreview" class="btn-preview" target="_blank" rel="noopener">Download Preview</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -778,7 +781,7 @@ a:hover { text-decoration: underline; }
     var PICK_YOUR_PACK = [
         'fullset', 'cereals_grains', 'leafy', 'legume',
         'nightshade', 'root-and-tuber', 'cucurbits-and-melons', 'brassicas',
-        'oilseed', 'other'
+        'oilseed', 'other', 'freepreview'
     ];
 
     function loadProducts() {
