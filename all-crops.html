@@ -39,6 +39,7 @@
     --white: #ffffff;
     --border: #c8cec0;
     --max-width: 1200px;
+    --section-gap: 48px;
 }
 
 html { scroll-behavior: smooth; }
@@ -73,95 +74,142 @@ a:hover { text-decoration: underline; }
 }
 .site-logo {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--green-700);
     letter-spacing: 0.5px;
 }
 .back-link {
-    font-size: 14px;
-    color: var(--text-secondary);
-    transition: color 0.2s;
-}
-.back-link:hover { color: var(--green-600); text-decoration: none; }
-
-/* ===================== PAGE HERO ===================== */
-.page-hero {
-    padding: 56px 0 40px;
-    text-align: center;
-}
-.page-hero h1 {
-    font-size: clamp(26px, 4vw, 44px);
-    font-weight: 700;
-    color: var(--green-900);
-    margin-bottom: 12px;
-}
-.page-hero p {
-    font-size: 16px;
-    color: var(--text-secondary);
-    max-width: 580px;
-    margin: 0 auto;
-}
-
-/* ===================== BUY BAR ===================== */
-.buy-bar {
-    text-align: center;
-    padding: 28px 0;
-    background: var(--green-900);
-    color: var(--white);
-    margin: 32px 0 48px;
-    border-radius: 10px;
-}
-.buy-bar .price {
-    font-size: clamp(28px, 3.5vw, 42px);
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-.buy-bar .savings {
-    font-size: 13px;
-    color: var(--green-400);
-    margin-bottom: 16px;
-}
-.btn-buy {
     display: inline-block;
-    background: var(--green-500);
+    padding: 8px 20px;
+    background: var(--green-600);
     color: var(--white);
-    padding: 14px 36px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.back-link:hover {
+    background: #64A53A;
+    text-decoration: none;
+}
+
+/* ===================== HERO BANNER ===================== */
+.hero {
+    background: url('assets/images/bg.jpg') center / cover no-repeat;
+    padding: 40px 0;
+}
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.hero-text {
+    color: var(--white);
+}
+.hero-label {
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+.hero h1 {
+    font-size: clamp(22px, 3.2vw, 34px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 14px;
+}
+.hero-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.btn-red {
+    display: inline-block;
+    background: #C03030;
+    color: var(--white);
+    padding: 14px 32px;
     border-radius: 8px;
     font-size: 15px;
     font-weight: 600;
     transition: background 0.2s;
     min-height: 44px;
 }
-.btn-buy:hover {
-    background: var(--green-400);
+.btn-red:hover {
+    background: #E24444;
     text-decoration: none;
 }
+.banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.png-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    line-height: 1.4;
+}
+.png-icon-img {
+    width: 36px;
+    height: auto;
+    flex-shrink: 0;
+}
+.hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-visual .table-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
 
-/* ===================== TOC ===================== */
-.toc-section {
-    padding: 0 0 48px;
+/* ===================== SPECIES CATEGORIES ===================== */
+.species-section {
+    padding: var(--section-gap) 0;
 }
-.toc-section h2 {
-    font-size: 20px;
-    font-weight: 600;
+.species-section .section-title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 300;
+    color: var(--green-900);
+    text-align: center;
+    margin-bottom: 28px;
+}
+.species-section .section-title strong { font-weight: 600; }
+.species-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 32px;
+}
+.species-cat-title {
+    font-size: 14px;
+    font-weight: 700;
     color: var(--green-800);
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
-.toc-grid {
-    columns: 4;
-    column-gap: 24px;
-}
-.toc-grid a {
-    display: block;
+.species-cat-list {
     font-size: 13px;
     color: var(--text-secondary);
-    padding: 2px 0;
-    line-height: 1.7;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.8;
 }
-.toc-grid a:hover { color: var(--green-600); text-decoration: none; }
+.species-cat-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.species-cat-list a:hover {
+    color: var(--green-600);
+    text-decoration: underline;
+}
 
 /* ===================== CROP ENTRIES ===================== */
 .crops-section {
@@ -191,9 +239,10 @@ a:hover { text-decoration: underline; }
     color: var(--sage-500);
     font-style: italic;
 }
-.crop-entry-header .standalone-link {
-    font-size: 13px;
-    color: var(--green-600);
+.crop-entry-header .badge {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* Table container for loaded tables */
@@ -261,23 +310,107 @@ a:hover { text-decoration: underline; }
     font-size: 13px;
 }
 
-/* ===================== BOTTOM CTA ===================== */
-.bottom-cta {
-    text-align: center;
-    padding: 64px 0;
-    background: var(--green-900);
-    color: var(--white);
+/* ===================== PICK YOUR PACK ===================== */
+.pick-section {
+    padding: 56px 0 64px;
+    background: var(--sage-50);
 }
-.bottom-cta h2 {
-    font-size: clamp(22px, 3vw, 36px);
+.pick-section .section-title {
+    font-size: clamp(22px, 3vw, 32px);
     font-weight: 300;
+    color: var(--green-900);
+    text-align: center;
+    margin-bottom: 28px;
+}
+.pick-section .section-title strong { font-weight: 700; }
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.product-card {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--sage-200);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+.product-card-img {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-bottom: 1px solid var(--sage-200);
+    background: var(--sage-100);
+}
+.product-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card-body {
+    padding: 14px 16px 8px;
+    flex: 1;
+}
+.product-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+.product-card-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-600);
+}
+.product-card-footer {
+    padding: 0 16px 14px;
+}
+.btn-green {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #5a7a52;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-decoration: none;
+}
+.btn-green:hover {
+    background: #64A53A;
+    text-decoration: none;
+}
+
+/* ===================== LICENSE ===================== */
+.license-section {
+    padding: 36px 0;
+    text-align: center;
+    border-top: 1px solid var(--sage-200);
+}
+.license-section h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green-900);
     margin-bottom: 12px;
 }
-.bottom-cta h2 strong { font-weight: 600; }
-.bottom-cta p {
-    font-size: 15px;
-    color: var(--green-300);
-    margin-bottom: 24px;
+.license-section p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* ===================== FOOTER ===================== */
@@ -317,13 +450,25 @@ a:hover { text-decoration: underline; }
 .back-to-top.visible { display: flex; }
 
 /* ===================== RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+    .species-categories { grid-template-columns: repeat(3, 1fr); }
+    .products-grid { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 900px) {
     .container { padding: 0 24px; }
-    .toc-grid { columns: 3; }
+    .hero .container { grid-template-columns: 1fr; gap: 28px; }
+    .hero-visual { max-width: 500px; margin: 0 auto; }
+    .species-categories { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .species-categories { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
     .container { padding: 0 16px; }
-    .toc-grid { columns: 2; }
+    .species-categories { grid-template-columns: 1fr 1fr; }
+    .products-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
+    :root { --section-gap: 36px; }
 }
 
 </style>
@@ -331,47 +476,125 @@ a:hover { text-decoration: underline; }
 
 <body>
 
+<!-- ==================== HEADER ==================== -->
 <header class="site-header">
     <div class="container">
-        <a href="index.html" class="site-logo">Crop Stages</a>
-        <a href="index.html" class="back-link">&larr; Back to home</a>
+        <div class="site-logo">Crop Stages</div>
+        <a href="index.html" class="back-link">Back to home</a>
     </div>
 </header>
 
-<section class="page-hero">
+<!-- ==================== HERO BANNER ==================== -->
+<section class="hero">
     <div class="container">
-        <h1>All 93 Crop Tables</h1>
-        <p>Browse every crop growth stage table included in the package. 930 professional BBCH illustrations.</p>
+        <div class="hero-text">
+            <div class="hero-label">View All Tables</div>
+            <h1>Explore the Complete Range<br>of Plant Growth Stage Charts</h1>
+            <p class="hero-sub">
+                Available individually, in groups, or as a full collection. Delivered in PowerPoint format, with other formats available upon request.
+                All crops are organized in clear tables with BBCH growth stage descriptions.
+                Easily place your product next to each stage to create a practical fertilizer application chart for your clients, agronomists, and field teams.
+            </p>
+            <div class="banner-actions">
+                <a href="https://iliadesign.gumroad.com/l/fullset" class="btn-red" target="_blank" rel="noopener">Buy All 93 Tables</a>
+                <div class="png-badge"><img src="assets/images/png_icon.png" alt="PNG" class="png-icon-img"><div>Individual images<br>of each growth stage<br>are included.</div></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="table-frame">
+                <img src="assets/images/table-2.png" alt="Editable BBCH growth stage table in PowerPoint">
+            </div>
+        </div>
     </div>
 </section>
 
-<div class="container">
-    <div class="buy-bar">
-        <div class="price">$490</div>
-        <div class="savings">Save 85% vs. custom design work ($3,200+)</div>
-        <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
-    </div>
-</div>
-
-<section class="toc-section">
+<!-- ==================== SPECIES CATEGORIES ==================== -->
+<section class="species-section" id="species">
     <div class="container">
-        <h2>Table of Contents</h2>
-        <div class="toc-grid" id="tocGrid"></div>
+        <h2 class="section-title">Complete <strong>species coverage:</strong></h2>
+        <div class="species-categories">
+            <div>
+                <div class="species-cat-title">Herbs &amp; Aromatic Plants</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-dill">Dill</a>, <a href="all-crops.html#crop-fennel">Fennel</a>, <a href="all-crops.html#crop-celery">Celery</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Fruit Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-banana-musaceae">Banana</a>, <a href="all-crops.html#crop-grape">Grape</a>, <a href="all-crops.html#crop-pineapple">Pineapple</a>, <a href="all-crops.html#crop-strawberry">Strawberry</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Brassicas — Cabbage Family</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-bok-choy">Bok Choy</a>, <a href="all-crops.html#crop-broccoli">Broccoli</a>, <a href="all-crops.html#crop-brussels-sprouts">Brussels Sprouts</a>, <a href="all-crops.html#crop-cauliflower">Cauliflower</a>, <a href="all-crops.html#crop-kale">Kale</a>, <a href="all-crops.html#crop-kohlrabi">Kohlrabi</a>, <a href="all-crops.html#crop-oilseed-radish">Oilseed Radish</a>, <a href="all-crops.html#crop-red-cabbage">Red Cabbage</a>, <a href="all-crops.html#crop-rutabaga">Rutabaga</a>, <a href="all-crops.html#crop-white-cabbage">White Cabbage</a>, <a href="all-crops.html#crop-white-mustard">White Mustard</a>, <a href="all-crops.html#crop-daikon">Daikon</a></div>
+            </div>
+            <div>
+                <div class="species-cat-title">Root Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-carrot">Carrot</a>, <a href="all-crops.html#crop-parsnip">Parsnip</a>, <a href="all-crops.html#crop-radish">Radish</a>, <a href="all-crops.html#crop-red-beet">Red Beet</a>, <a href="all-crops.html#crop-sugar-beet">Sugar Beet</a>, <a href="all-crops.html#crop-turnip">Turnip</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Other Vegetables</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-artichoke">Artichoke</a>, <a href="all-crops.html#crop-asparagus">Asparagus</a>, <a href="all-crops.html#crop-okra">Okra</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Forage &amp; Grass Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-couch-grass">Couch Grass</a>, <a href="all-crops.html#crop-perennial-ryegrass">Perennial Ryegrass</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Legumes</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-alfalfa">Alfalfa</a>, <a href="all-crops.html#crop-bean">Bean</a>, <a href="all-crops.html#crop-chickpea-2">Chickpea</a>, <a href="all-crops.html#crop-clover">Clover</a>, <a href="all-crops.html#crop-common-vetch">Common Vetch</a>, <a href="all-crops.html#crop-cowpea">Cowpea</a>, <a href="all-crops.html#crop-lentil">Lentil</a>, <a href="all-crops.html#crop-pea">Pea</a>, <a href="all-crops.html#crop-peanut">Peanut</a></div>
+            </div>
+            <div>
+                <div class="species-cat-title">Cereals &amp; Grains</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-barley">Barley</a>, <a href="all-crops.html#crop-buckwheat">Buckwheat</a>, <a href="all-crops.html#crop-corn">Corn</a>, <a href="all-crops.html#crop-oat">Oat</a>, <a href="all-crops.html#crop-quinoa">Quinoa</a>, <a href="all-crops.html#crop-rice">Rice</a>, <a href="all-crops.html#crop-sorghum">Sorghum</a>, <a href="all-crops.html#crop-wheat">Wheat</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Oilseed Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-flax">Flax</a>, <a href="all-crops.html#crop-rapeseed">Rapeseed</a>, <a href="all-crops.html#crop-sesame">Sesame</a>, <a href="all-crops.html#crop-soybean">Soybean</a>, <a href="all-crops.html#crop-sunflower">Sunflower</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Industrial Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-cotton">Cotton</a>, <a href="all-crops.html#crop-hemp">Hemp</a>, <a href="all-crops.html#crop-hops">Hops</a>, <a href="all-crops.html#crop-sugarcane">Sugarcane</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Alliums</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-garlic">Garlic</a>, <a href="all-crops.html#crop-leek">Leek</a>, <a href="all-crops.html#crop-onion">Onion</a></div>
+            </div>
+            <div>
+                <div class="species-cat-title">Tuber Crops</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-potato">Potato</a>, <a href="all-crops.html#crop-sweet-potato">Sweet Potato</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Solanaceae</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-cayenne-pepper">Cayenne Pepper</a>, <a href="all-crops.html#crop-eggplant">Eggplant</a>, <a href="all-crops.html#crop-pepper">Pepper</a>, <a href="all-crops.html#crop-tomato">Tomato</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Cucurbits &amp; Melons</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-cucumber">Cucumber</a>, <a href="all-crops.html#crop-melon">Melon</a>, <a href="all-crops.html#crop-pumpkin">Pumpkin</a>, <a href="all-crops.html#crop-watermelon">Watermelon</a>, <a href="all-crops.html#crop-zucchini">Zucchini</a></div>
+
+                <div class="species-cat-title" style="margin-top:14px;">Leafy Vegetables</div>
+                <div class="species-cat-list"><a href="all-crops.html#crop-arugula">Arugula</a>, <a href="all-crops.html#crop-lettuce">Lettuce</a>, <a href="all-crops.html#crop-spinach">Spinach</a>, <a href="all-crops.html#crop-chicory">Chicory</a></div>
+            </div>
+        </div>
     </div>
 </section>
 
+<!-- ==================== ALL CROP TABLES ==================== -->
 <section class="crops-section">
     <div class="container" id="cropsContainer"></div>
 </section>
 
-<section class="bottom-cta">
+<!-- ==================== PICK YOUR PACK ==================== -->
+<section class="pick-section" id="catalog">
     <div class="container">
-        <h2>Get all <strong>93 crop tables</strong> today</h2>
-        <p>930 professional illustrations. Ready-to-use HTML tables. One purchase, unlimited use.</p>
-        <a href="https://iliadesign.gumroad.com/l/plant-growth-cycles" class="btn-buy" target="_blank" rel="noopener">Buy All 93 Tables on Gumroad</a>
+        <h2 class="section-title">Pick Your <strong>Pack</strong></h2>
+        <div class="products-grid" id="productsGrid">
+            <p style="text-align:center;color:#8a9184;grid-column:1/-1;padding:40px;">
+                Run <code>python fetch_products.py</code> to generate product cards.
+            </p>
+        </div>
     </div>
 </section>
 
+<!-- ==================== LICENSE ==================== -->
+<section class="license-section">
+    <div class="container">
+        <h3>License</h3>
+        <p>
+            All illustrations are licensed for commercial use. Use them in your marketing materials,
+            applications, presentations, and websites. Contact <a href="mailto:kalinin.design@gmail.com">kalinin.design@gmail.com</a> for custom licensing inquiries.
+        </p>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
 <footer class="site-footer">
     <div class="container">
         <p>Crop Stages by Ilia Kalinin</p>
@@ -381,6 +604,7 @@ a:hover { text-decoration: underline; }
 
 <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
 
+<!-- ==================== SCRIPTS ==================== -->
 <script>
 (function() {
 
@@ -482,28 +706,20 @@ a:hover { text-decoration: underline; }
         { slug: "zucchini", name: "Zucchini", latin: "Cucurbita pepo" }
     ];
 
-    const tocGrid = document.getElementById('tocGrid');
     const cropsContainer = document.getElementById('cropsContainer');
 
-    // ===== BUILD TOC + CROP ENTRIES =====
+    // ===== BUILD CROP ENTRIES (no "Open separately" link) =====
     CROPS.forEach(function(crop, i) {
-        const num = i + 1;
-        const anchorId = 'crop-' + crop.slug;
+        var num = i + 1;
+        var anchorId = 'crop-' + crop.slug;
 
-        // TOC link
-        const tocLink = document.createElement('a');
-        tocLink.href = '#' + anchorId;
-        tocLink.textContent = num + '. ' + crop.name;
-        tocGrid.appendChild(tocLink);
-
-        // Crop entry
-        const entry = document.createElement('div');
+        var entry = document.createElement('div');
         entry.className = 'crop-entry';
         entry.id = anchorId;
         entry.innerHTML =
             '<div class="crop-entry-header">' +
-                '<h3>' + num + '. ' + crop.name + ' <span class="latin">(' + crop.latin + ')</span></h3>' +
-                '<a href="crops/' + crop.slug + '.html" class="standalone-link">Open separately &rarr;</a>' +
+                '<h3>' + crop.name + ' <span class="latin">(' + crop.latin + ')</span></h3>' +
+                '<span class="badge">Botanical Growth Stages</span>' +
             '</div>' +
             '<div class="crop-table-container" data-slug="' + crop.slug + '">' +
                 '<div class="crop-table-loading">Scroll down to load table…</div>' +
@@ -540,7 +756,7 @@ a:hover { text-decoration: underline; }
                     el.innerHTML = extractTable(html);
                 })
                 .catch(function() {
-                    el.innerHTML = '<div class="crop-table-loading">Could not load table. <a href="crops/' + slug + '.html">View separately &rarr;</a></div>';
+                    el.innerHTML = '<div class="crop-table-loading">Could not load table.</div>';
                 });
 
             observer.unobserve(el);
@@ -556,6 +772,65 @@ a:hover { text-decoration: underline; }
     window.addEventListener('scroll', function() {
         btn.classList.toggle('visible', window.scrollY > 600);
     });
+
+    // ===== LOAD PRODUCTS FROM GUMROAD API =====
+    var ACCESS_TOKEN = 'lOjKsjqYTlwL_ivMcmPCuASnuyabitSHZY76TkvgbOk';
+    var PICK_YOUR_PACK = [
+        'fullset', 'cereals_grains', 'leafy', 'legume',
+        'nightshade', 'root-and-tuber', 'cucurbits-and-melons', 'brassicas',
+        'oilseed', 'other'
+    ];
+
+    function loadProducts() {
+        var grid = document.getElementById('productsGrid');
+        fetch('https://api.gumroad.com/v2/products?access_token=' + ACCESS_TOKEN)
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (!data.success) return;
+                var bySlug = {};
+                data.products.forEach(function(p) {
+                    if (!p.published) return;
+                    var plink = p.custom_permalink || '';
+                    var surl = p.short_url || '';
+                    if (surl.indexOf('/l/') !== -1) {
+                        bySlug[surl.split('/l/')[1]] = p;
+                        bySlug[surl.split('/l/')[1].toLowerCase()] = p;
+                    }
+                    if (plink) {
+                        bySlug[plink] = p;
+                        bySlug[plink.toLowerCase()] = p;
+                    }
+                });
+
+                var html = '';
+                PICK_YOUR_PACK.forEach(function(slug) {
+                    var p = bySlug[slug] || bySlug[slug.toLowerCase()];
+                    if (!p) return;
+                    var name = p.name.replace(/</g, '&lt;');
+                    var price = p.formatted_price || ('$' + (p.price / 100));
+                    var thumb = p.thumbnail_url || '';
+                    var url = p.short_url || ('https://iliadesign.gumroad.com/l/' + slug);
+                    html += '<div class="product-card">' +
+                        '<div class="product-card-img">' +
+                            (thumb ? '<img src="' + thumb + '" alt="' + name + '" loading="lazy">' : '') +
+                        '</div>' +
+                        '<div class="product-card-body">' +
+                            '<div class="product-card-title">' + name + '</div>' +
+                            '<div class="product-card-price">' + price + '</div>' +
+                        '</div>' +
+                        '<div class="product-card-footer">' +
+                            '<a class="btn-green" href="' + url + '" target="_blank" rel="noopener">Purchase</a>' +
+                        '</div>' +
+                    '</div>';
+                });
+                if (html) grid.innerHTML = html;
+            })
+            .catch(function() {
+                // Products will stay as placeholder — use fetch_products.py for static fallback
+            });
+    }
+
+    loadProducts();
 
 })();
 </script>
