@@ -789,7 +789,7 @@ a:hover { text-decoration: underline; }
     // ===== LOAD PRODUCTS FROM GUMROAD API =====
     var ACCESS_TOKEN = 'lOjKsjqYTlwL_ivMcmPCuASnuyabitSHZY76TkvgbOk';
     var PICK_YOUR_PACK = [
-        'fullset', 'cereals_grains', 'leafy', 'legume',
+        'fullset', 'free-sample-pack', 'cereals_grains', 'leafy', 'legume',
         'nightshade', 'root-and-tuber', 'cucurbits-and-melons', 'brassicas',
         'oilseed', 'other', 'freepreview'
     ];
@@ -823,6 +823,7 @@ a:hover { text-decoration: underline; }
                     var price = p.formatted_price || ('$' + (p.price / 100));
                     var thumb = p.thumbnail_url || '';
                     var url = p.short_url || ('https://iliadesign.gumroad.com/l/' + slug);
+                    var btnText = (p.price === 0) ? 'Download Free' : 'Purchase';
                     html += '<div class="product-card">' +
                         '<div class="product-card-img">' +
                             (thumb ? '<img src="' + thumb + '" alt="' + name + '" loading="lazy">' : '') +
@@ -832,7 +833,7 @@ a:hover { text-decoration: underline; }
                             '<div class="product-card-price">' + price + '</div>' +
                         '</div>' +
                         '<div class="product-card-footer">' +
-                            '<a class="btn-green" href="' + url + '" target="_blank" rel="noopener">Purchase</a>' +
+                            '<a class="btn-green" href="' + url + '" target="_blank" rel="noopener">' + btnText + '</a>' +
                         '</div>' +
                     '</div>';
                 });

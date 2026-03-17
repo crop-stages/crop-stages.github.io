@@ -250,7 +250,7 @@ goTo(0);
 /* === Load product cards from Gumroad API === */
 (function(){
 var TOKEN='lOjKsjqYTlwL_ivMcmPCuASnuyabitSHZY76TkvgbOk';
-var SLUGS=['fullset','cereals_grains','leafy','legume','nightshade','root-and-tuber','cucurbits-and-melons','brassicas','oilseed','other','freepreview','plant-growth-cycles','oipiv','development_fruit_tree','GardenIcons','FlowerGrowth','FarmLineIconsSet'];
+var SLUGS=['fullset','free-sample-pack','cereals_grains','leafy','legume','nightshade','root-and-tuber','cucurbits-and-melons','brassicas','oilseed','other','freepreview','plant-growth-cycles','oipiv','development_fruit_tree','GardenIcons','FlowerGrowth','FarmLineIconsSet'];
 var grid=document.getElementById('productsGrid');
 
 fetch('https://api.gumroad.com/v2/products?access_token='+TOKEN)
@@ -272,7 +272,8 @@ fetch('https://api.gumroad.com/v2/products?access_token='+TOKEN)
     var pr=p.formatted_price||('$'+(p.price/100));
     var th=p.thumbnail_url||'';
     var u=p.short_url||('https://iliadesign.gumroad.com/l/'+slug);
-    html+='<div class="product-card"><div class="product-card-img">'+(th?'<img src="'+th+'" alt="'+n+'" loading="lazy">':'')+'</div><div class="product-card-body"><div class="product-card-title">'+n+'</div><div class="product-card-price">'+pr+'</div></div><div class="product-card-footer"><a class="product-card-btn" href="'+u+'" target="_blank" rel="noopener">Purchase</a></div></div>';
+    var btnText=(p.price===0)?'Download Free':'Purchase';
+    html+='<div class="product-card"><div class="product-card-img">'+(th?'<img src="'+th+'" alt="'+n+'" loading="lazy">':'')+'</div><div class="product-card-body"><div class="product-card-title">'+n+'</div><div class="product-card-price">'+pr+'</div></div><div class="product-card-footer"><a class="product-card-btn" href="'+u+'" target="_blank" rel="noopener">'+btnText+'</a></div></div>';
   });
   if(html)grid.innerHTML=html;
 })
