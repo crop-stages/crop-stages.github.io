@@ -272,4 +272,12 @@ fetch('https://api.gumroad.com/v2/products?access_token='+TOKEN)
     var pr=p.formatted_price||('$'+(p.price/100));
     var th=p.thumbnail_url||'';
     var u=p.short_url||('https://iliadesign.gumroad.com/l/'+slug);
-    html+='<div class="product-card">
+    html+='<div class="product-card"><div class="product-card-img">'+(th?'<img src="'+th+'" alt="'+n+'" loading="lazy">':'')+'</div><div class="product-card-body"><div class="product-card-title">'+n+'</div><div class="product-card-price">'+pr+'</div></div><div class="product-card-footer"><a class="product-card-btn" href="'+u+'" target="_blank" rel="noopener">Purchase</a></div></div>';
+  });
+  if(html)grid.innerHTML=html;
+})
+.catch(function(){});
+})();
+</script>
+</body>
+</html>

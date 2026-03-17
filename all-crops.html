@@ -832,4 +832,21 @@ a:hover { text-decoration: underline; }
                             '<div class="product-card-price">' + price + '</div>' +
                         '</div>' +
                         '<div class="product-card-footer">' +
-                            '<a class="btn-green" href="' + url + '" target
+                            '<a class="btn-green" href="' + url + '" target="_blank" rel="noopener">Purchase</a>' +
+                        '</div>' +
+                    '</div>';
+                });
+                if (html) grid.innerHTML = html;
+            })
+            .catch(function() {
+                // Products will stay as placeholder — use fetch_products.py for static fallback
+            });
+    }
+
+    loadProducts();
+
+})();
+</script>
+
+</body>
+</html>
