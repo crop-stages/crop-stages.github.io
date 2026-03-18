@@ -262,7 +262,23 @@ a:hover { text-decoration: underline; }
 .crop-table-container {
     overflow-x: auto;
     min-height: 200px;
+    position: relative;
 }
+/* Right-edge fade hints that table scrolls horizontally */
+.crop-entry {
+    position: relative;
+}
+.crop-entry::after {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 48px;
+    width: 48px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,.9));
+    pointer-events: none;
+    z-index: 5;
+    transition: opacity .3s;
+}
+.crop-entry.scrolled-end::after { opacity: 0; }
 .crop-table-container .stages-table {
     width: 100%;
     border-collapse: collapse;
@@ -779,6 +795,16 @@ a:hover { text-decoration: underline; }
     });
 
     containers.forEach(function(c) { observer.observe(c); });
+
+    // ===== SCROLL-FADE: hide right gradient when scrolled to end =====
+    containers.forEach(function(c) {
+        c.addEventListener('scroll', function() {
+            var entry = c.closest('.crop-entry');
+            if (!entry) return;
+            var atEnd = c.scrollWidth - c.scrollLeft - c.clientWidth < 8;
+            entry.classList.toggle('scrolled-end', atEnd);
+        }, {passive: true});
+    });
 
     // ===== BACK TO TOP BUTTON =====
     var btn = document.getElementById('backToTop');

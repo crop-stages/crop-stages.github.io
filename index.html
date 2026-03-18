@@ -30,7 +30,7 @@ a:hover{text-decoration:underline}
 .site-logo{font-size:18px;font-weight:800;color:var(--green-700);letter-spacing:.5px}
 .site-nav a{display:inline-block;font-size:14px;font-weight:600;color:var(--white);background:var(--green-600);padding:8px 20px;border-radius:6px;transition:background .2s}
 .site-nav a:hover{background:#64A53A;text-decoration:none}
-.banner{position:relative;width:100%;min-height:340px;max-height:640px;background:url('assets/images/bg.jpg') center/cover no-repeat;display:flex;align-items:center;overflow:hidden}
+.banner{position:relative;width:100%;min-height:340px;background:url('assets/images/bg.jpg') center/cover no-repeat;display:flex;align-items:center}
 .banner-inner{position:relative;max-width:1200px;margin:0 auto;padding:40px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .banner-text{color:#fff}
 .banner-pretitle{font-size:18px;font-style:italic;font-weight:600;color:#fff;margin-bottom:10px}
@@ -73,6 +73,9 @@ a:hover{text-decoration:underline}
 .slider-title{text-align:center;font-size:clamp(28px,4vw,44px);font-weight:300;color:var(--green-900);margin-bottom:24px;letter-spacing:-.3px}
 .slider-title strong{font-weight:700}
 .carousel-wrap{position:relative;padding:0 28px}
+/* Right-edge fade hints that table scrolls horizontally */
+.carousel-wrap::after{content:"";position:absolute;top:0;right:28px;bottom:60px;width:48px;background:linear-gradient(to right,transparent,rgba(255,255,255,.9));pointer-events:none;z-index:5;transition:opacity .3s}
+.carousel-wrap.scrolled-end::after{opacity:0}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-60%);z-index:10;width:48px;height:48px;border-radius:50%;border:1px solid var(--sage-300);background:var(--white);color:var(--sage-600);font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,box-shadow .2s,color .2s;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:0;line-height:1}
 .carousel-btn:hover{background:var(--green-50);border-color:var(--green-400);color:var(--green-700);box-shadow:0 4px 14px rgba(0,0,0,.1)}
 .carousel-btn.prev{left:-8px}.carousel-btn.next{right:-8px}
@@ -122,13 +125,15 @@ a:hover{text-decoration:underline}
 @media(max-width:900px){.container{padding:0 24px}.banner-inner{grid-template-columns:1fr;gap:28px;padding:32px 24px}.banner-visual{max-width:540px;margin:0 auto}.about-grid{grid-template-columns:1fr;gap:40px}.carousel-wrap{padding:0 20px}}
 @media(max-width:768px){.species-grid{columns:2;column-gap:24px}.species-catalog{padding:40px 0 48px}}
 @media(max-width:700px){.carousel-btn{width:38px;height:38px;font-size:18px}.carousel-btn.prev{left:0}.carousel-btn.next{right:0}.carousel-wrap{padding:0 16px}.products-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.container{padding:0 16px}.banner-inner{padding:24px 16px}.banner-actions{flex-direction:column;align-items:flex-start;gap:14px}.slider-section{padding:40px 0 36px}.carousel-btn.prev{left:2px}.carousel-btn.next{right:2px}.products-grid{grid-template-columns:1fr;max-width:340px}}
+@media(max-width:600px){.container{padding:0 16px}.banner-inner{padding:28px 16px 32px}.banner-actions{flex-direction:column;align-items:flex-start;gap:14px}.slider-section{padding:40px 0 36px}.carousel-btn.prev{left:2px}.carousel-btn.next{right:2px}.products-grid{grid-template-columns:1fr;max-width:340px}}
 @media(max-width:480px){.species-grid{columns:1}}
 </style>
 </head>
 <body>
+<!-- ==================== HEADER ==================== -->
 <header class="site-header"><div class="container"><div class="site-logo">Crop Stages</div><nav class="site-nav"><a href="all-crops.html">View All Tables</a></nav></div></header>
 
+<!-- ==================== HERO BANNER ==================== -->
 <section class="banner"><div class="banner-inner">
 <div class="banner-text">
 <div class="banner-pretitle">PowerPoint Presentation</div>
@@ -142,6 +147,7 @@ a:hover{text-decoration:underline}
 <div class="banner-visual"><div class="table-frame"><img src="assets/images/table.png" alt="Editable Table in PowerPoint Presentation — Lettuce BBCH growth stages"></div></div>
 </div></section>
 
+<!-- ==================== SPECIES CATALOG ==================== -->
 <section class="species-catalog" id="species"><div class="container">
 <h2 class="species-catalog-title">Complete <strong>species coverage:</strong></h2>
 <div class="species-grid">
@@ -162,11 +168,13 @@ a:hover{text-decoration:underline}
 <div class="species-group"><div class="species-group-name">Leafy Vegetables</div><div class="species-group-crops"><a href="all-crops.html#crop-arugula">Arugula</a>, <a href="all-crops.html#crop-lettuce">Lettuce</a>, <a href="all-crops.html#crop-spinach">Spinach</a>, <a href="all-crops.html#crop-chicory">Chicory</a></div></div>
 </div></div></section>
 
+<!-- ==================== POWERPOINT COMPATIBILITY ==================== -->
 <section class="compat-section"><div class="container">
 <h2>Compatible with Microsoft<br><strong>PowerPoint 2007 and newer</strong></h2>
 <img src="assets/images/pptx_screenshot.png" alt="PowerPoint presentation preview" class="compat-img" loading="lazy">
 </div></section>
 
+<!-- ==================== ABOUT / NOTE ON ACCURACY ==================== -->
 <section class="about-section" id="about"><div class="container"><div class="about-grid">
 <div><h3>Created by a <strong>professional illustrator</strong></h3>
 <p>Professional botanical illustrator with 4,000+ images in online stores. Developed visuals for leading European agro-companies in collaboration with botanists. Every illustration is designed to approximate the BBCH phenological scale for consistency across all crops.</p>
@@ -181,6 +189,7 @@ a:hover{text-decoration:underline}
 <p>If you need just a few crops, <a href="mailto:kalinin.design@gmail.com">contact me directly</a>. I also welcome feedback on corrections — write to me and we'll improve this system together.</p>
 </div></div></div></section>
 
+<!-- ==================== EXAMPLES CAROUSEL ==================== -->
 <section class="slider-section"><div class="container">
 <h2 class="slider-title"><strong>Examples</strong> of Tables</h2>
 <div class="carousel-wrap">
@@ -192,7 +201,7 @@ a:hover{text-decoration:underline}
 <div class="carousel-dots" id="carouselDots"></div>
 </div></section>
 
-<!-- PICK YOUR PACK — Replace this section with output of fetch_products.py -->
+<!-- ==================== PICK YOUR PACK (product cards loaded via Gumroad API) ==================== -->
 <section class="pick-your-pack" id="catalog"><div class="container">
 <h2 class="species-catalog-title">Pick Your <strong>Pack</strong></h2>
 <div class="products-grid" id="productsGrid">
@@ -200,11 +209,13 @@ a:hover{text-decoration:underline}
 </div>
 </div></section>
 
+<!-- ==================== LICENSE ==================== -->
 <section class="license-section"><div class="container">
 <h3>License</h3>
 <p>All illustrations are licensed for commercial use. Use them in your marketing materials, applications, presentations, and websites. Contact <a href="mailto:kalinin.design@gmail.com">kalinin.design@gmail.com</a> for custom licensing inquiries.</p>
 </div></section>
 
+<!-- ==================== FOOTER ==================== -->
 <footer class="site-footer"><div class="container">
 <div class="footer-logos">
 <a href="https://www.creativemarket.com/Kalinin" target="_blank" rel="noopener" title="Creative Market"><img src="assets/images/logo-creativemarket.png" alt="Creative Market"></a>
@@ -215,7 +226,11 @@ a:hover{text-decoration:underline}
 </div></footer>
 
 <script>
-/* === Slider === */
+/* ============================================================
+   CAROUSEL — loads crop tables from /crops/*.html via fetch,
+   caches them, and navigates with prev/next buttons, dots,
+   arrow keys, and touch swipe.
+   ============================================================ */
 (function(){
 var CROPS=[
 {slug:'wheat',name:'Wheat',file:'crops/wheat.html'},
@@ -231,10 +246,28 @@ var CROPS=[
 ];
 var ci=0,cache={};
 var area=document.getElementById('carouselArea'),nameEl=document.getElementById('carouselName'),dotsEl=document.getElementById('carouselDots');
+var wrap=document.querySelector('.carousel-wrap');
+
+/* Build dot buttons */
 CROPS.forEach(function(c,i){var d=document.createElement('button');d.className='dot'+(i===0?' active':'');d.setAttribute('aria-label',c.name);d.onclick=function(){goTo(i)};dotsEl.appendChild(d)});
+
 function ud(){dotsEl.querySelectorAll('.dot').forEach(function(d,i){d.classList.toggle('active',i===ci)})}
+
+/* Extract <table class="stages-table"> from fetched HTML */
 function ex(h){var p=new DOMParser(),d=p.parseFromString(h,'text/html'),t=d.querySelector('table.stages-table');return t?t.outerHTML:'<p style="color:#999">Table not found.</p>'}
-function lc(i){var c=CROPS[i];nameEl.innerHTML='<strong>'+c.name+'</strong>';if(cache[c.slug]){area.classList.add('fading');setTimeout(function(){area.innerHTML=cache[c.slug];area.classList.remove('fading')},150);return}area.classList.add('fading');setTimeout(function(){area.innerHTML='<div class="carousel-loading">Loading '+c.name+'…</div>';area.classList.remove('fading')},150);fetch(c.file).then(function(r){if(!r.ok)throw r.status;return r.text()}).then(function(h){var t=ex(h);cache[c.slug]=t;if(ci===i){area.classList.add('fading');setTimeout(function(){area.innerHTML=t;area.classList.remove('fading')},150)}}).catch(function(){if(ci===i)area.innerHTML='<div class="carousel-loading">Could not load. <a href="'+c.file+'" style="color:#5a7a52">View →</a></div>'})}
+
+/* Hide right-edge fade when user scrolls table to the end */
+function checkScrollFade(){
+  if(!wrap)return;
+  var atEnd=area.scrollWidth-area.scrollLeft-area.clientWidth<8;
+  wrap.classList.toggle('scrolled-end',atEnd);
+}
+area.addEventListener('scroll',checkScrollFade,{passive:true});
+
+/* Load and display table for index i */
+function lc(i){var c=CROPS[i];nameEl.innerHTML='<strong>'+c.name+'</strong>';if(cache[c.slug]){area.classList.add('fading');setTimeout(function(){area.innerHTML=cache[c.slug];area.scrollLeft=0;checkScrollFade();area.classList.remove('fading')},150);return}area.classList.add('fading');setTimeout(function(){area.innerHTML='<div class="carousel-loading">Loading '+c.name+'…</div>';area.classList.remove('fading')},150);fetch(c.file).then(function(r){if(!r.ok)throw r.status;return r.text()}).then(function(h){var t=ex(h);cache[c.slug]=t;if(ci===i){area.classList.add('fading');setTimeout(function(){area.innerHTML=t;area.scrollLeft=0;checkScrollFade();area.classList.remove('fading')},150)}}).catch(function(){if(ci===i)area.innerHTML='<div class="carousel-loading">Could not load. <a href="'+c.file+'" style="color:#5a7a52">View →</a></div>'})}
+
+/* Prefetch adjacent slides */
 function pa(){[(ci-1+CROPS.length)%CROPS.length,(ci+1)%CROPS.length].forEach(function(i){var c=CROPS[i];if(!cache[c.slug])fetch(c.file).then(function(r){return r.ok?r.text():''}).then(function(h){if(h)cache[c.slug]=ex(h)}).catch(function(){})})}
 function goTo(i){ci=i;ud();lc(i);setTimeout(pa,300)}
 function prev(){goTo((ci-1+CROPS.length)%CROPS.length)}
@@ -242,12 +275,18 @@ function next(){goTo((ci+1)%CROPS.length)}
 document.getElementById('btnPrev').addEventListener('click',prev);
 document.getElementById('btnNext').addEventListener('click',next);
 document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')prev();if(e.key==='ArrowRight')next()});
+
+/* Touch swipe support */
 var tx=0;area.addEventListener('touchstart',function(e){tx=e.changedTouches[0].screenX},{passive:true});
 area.addEventListener('touchend',function(e){var d=tx-e.changedTouches[0].screenX;if(Math.abs(d)>50){d>0?next():prev()}},{passive:true});
 goTo(0);
 })();
 
-/* === Load product cards from Gumroad API === */
+/* ============================================================
+   PRODUCT CARDS — fetches published products from Gumroad API
+   and renders them in the "Pick Your Pack" grid.
+   SLUGS array controls display order.
+   ============================================================ */
 (function(){
 var TOKEN='lOjKsjqYTlwL_ivMcmPCuASnuyabitSHZY76TkvgbOk';
 var SLUGS=['fullset','free-sample-pack','cereals_grains','leafy','legume','nightshade','root-and-tuber','cucurbits-and-melons','brassicas','oilseed','other','freepreview','plant-growth-cycles','oipiv','development_fruit_tree','GardenIcons','FlowerGrowth','FarmLineIconsSet'];
